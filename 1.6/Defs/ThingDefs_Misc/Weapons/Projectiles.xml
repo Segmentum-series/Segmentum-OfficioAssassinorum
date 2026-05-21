@@ -1,0 +1,154 @@
+<Defs>
+  <HediffDef>
+    <defName>Seg_VIND_HellfireBurns</defName>
+    <label>Hellfire Acid</label>
+    <description>Acidifier mixture injected into veins through a exitus rifle hellfire round.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>600~600</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+      <li Class="seg.HediffCompProperties_RandomDamage">
+        <intervalTicks>60</intervalTicks>
+        <amount>5~10</amount>
+        <type>AcidBurn</type>
+      </li>
+    </comps>
+  </HediffDef>
+<ThingDef ParentName="BaseBullet">
+		<defName>Seg_VIND_Bullet_Hellfire</defName>
+		<label>Hellfire round</label>
+		<description>Acid round.</description>
+		<uiIconPath>UI/Seg_VIND_UI_Hellfire</uiIconPath>
+		<graphicData>
+			<texPath>Things/Projectile/Seg_VIND_Hellfire</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Seg_VIND_HellfireDamage</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>.5</stoppingPower>
+		<speed>90</speed>
+		</projectile>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AmmoChanger">
+				<effectiveRange>55.9</effectiveRange>
+				<warmupTime>1.5</warmupTime>
+				<shotsPerBurst>1</shotsPerBurst>
+			</li>
+		</modExtensions>
+	</ThingDef>
+    <ThingDef ParentName="BaseBullet">
+		<defName>Seg_VIND_Bullet_Micromelta</defName>
+		<label>Micromelta round</label>
+		<description>Highly volatile round.</description>
+		<graphicData>
+			<texPath>Things/Projectile/Seg_VIND_Micromelta</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>UI/Seg_VIND_UI_Micromelta</uiIconPath>
+		<projectile>
+			<damageDef>Vaporize</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<stoppingPower>.5</stoppingPower>
+		<speed>750</speed>
+		</projectile>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AmmoChanger">
+				<effectiveRange>31.5</effectiveRange>
+				<warmupTime>3</warmupTime>
+				<shotsPerBurst>1</shotsPerBurst>
+			</li>
+		</modExtensions>
+	</ThingDef>
+    <ThingDef ParentName="BaseBullet">
+		<defName>Seg_VIND_Bullet_ShieldBreaker</defName>
+		<label>Shield Breaker round</label>
+		<uiIconPath>UI/Seg_VIND_UI_ShieldBreaker</uiIconPath>
+		<description>Highly effective against powered armor.</description>
+		<graphicData>
+			<texPath>Things/Projectile/Seg_VIND_ShieldBreaker</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>.5</stoppingPower>
+		<speed>90</speed>
+		</projectile>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<thingClass>seg.Projectile_ShieldBreaker</thingClass>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AmmoChanger">
+				<effectiveRange>55.9</effectiveRange>
+				<warmupTime>1.5</warmupTime>
+				<shotsPerBurst>1</shotsPerBurst>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+			<defName>Seg_VIND_Bullet_TurboPenetrator</defName>
+			<label>exitus rifle sabot</label>
+			<uiIconPath>UI/Seg_VIND_UI_TurboPenetrator</uiIconPath>
+			<projectile>
+				<damageDef>Bullet</damageDef>
+				<damageAmountBase>28</damageAmountBase>
+				<armorPenetrationBase>2</armorPenetrationBase>
+				<stoppingPower>4</stoppingPower>
+				<speed>750</speed>
+			</projectile>
+			<thingClass>VEF.Weapons.GaussProjectile</thingClass>
+			<graphicData>
+				<texPath>Things/Projectile/Seg_VIND_TurboPenetratorFadeIn</texPath>
+				<texPathFadeOut>Things/Projectile/Seg_VIND_TurboPenetratorFadeOut</texPathFadeOut>
+			</graphicData>
+			<reachMaxRangeAlways>true</reachMaxRangeAlways>
+			<minDistanceToAffect>1.9</minDistanceToAffect>
+			<drawOffscreen>true</drawOffscreen>
+			<lifeTimeDuration>50</lifeTimeDuration>
+			<widthScaleFactor>0.10</widthScaleFactor>
+			<heightScaleFactor>1</heightScaleFactor>
+			<startingPositionOffset>(0,0,-1)</startingPositionOffset>
+			<totalSizeScale>0.8</totalSizeScale>
+			<tickFrameRate>2</tickFrameRate>
+			<finalTickFrameRate>2</finalTickFrameRate>
+			<tickDamageRate>5</tickDamageRate>
+			<dealsDamageOnce>true</dealsDamageOnce>
+			<disableVanillaDamageMethod>true</disableVanillaDamageMethod>
+			<stopWhenHit>false</stopWhenHit>
+			<stopWhenHitAt>
+				<li>CollapsedRocks</li>
+				<li>MineableSteel</li>
+				<li>MineableSilver</li>
+				<li>MineableGold</li>
+				<li>MineableUranium</li>
+				<li>MineablePlasteel</li>
+				<li>MineableJade</li>
+				<li>MineableComponentsIndustrial</li>
+				<li>RaisedRocks</li>
+				<li>Sandstone</li>
+				<li>SmoothedSandstone</li>
+				<li>Granite</li>
+				<li>SmoothedGranite</li>
+				<li>Limestone</li>
+				<li>SmoothedLimestone</li>
+				<li>Slate</li>
+				<li>SmoothedSlate</li>
+				<li>Marble</li>
+				<li>SmoothedMarble</li>
+			</stopWhenHitAt>
+		</VEF.Weapons.ExpandableProjectileDef>
+
+</Defs>
