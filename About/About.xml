@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Segmentum - Assassins</name>
+	<name>Segmentum - Vindicare Assassins</name>
 	<author>REDACTED, Abomination, Anndra, T H E  S U S P E C T, TwoLargeGayMen, Phonicmas, JerryTheCultist, ShunTheWitch</author> <!-- just assuming that Pho Jerry Shun will very likely help or we will use something they helped before with-->
-	<packageId>REDACTED.Segmentum.Assassins</packageId>
+	<packageId>REDACTED.Segmentum.VindicareAssassins</packageId>
 	<modVersion>1.1.0</modVersion>
 	<description>"Target found. Execution Imminent!"\n\n Play with the Vindicare assassin temple! They are masters in dealing long ranged death, and making sure their esoteric methods do not fall into enemy hands.\n\nThis mod includes:\n- Apparels\n- Weapons\n- Assassins is part of "Segmentum", a Warhammer 40.000 modding series by REDACTED.</description>
 	<supportedVersions>
