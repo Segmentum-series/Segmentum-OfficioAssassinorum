@@ -1,8 +1,8 @@
 <Defs>
   <HediffDef>
     <defName>Seg_VIND_HellfireBurns</defName>
-    <label>Hellfire Acid</label>
-    <description>Acidifier mixture injected into veins through a exitus rifle hellfire round.</description>
+    <label>Hellfire acid</label>
+    <description>A potent bio-acidic toxin is wreaking havoc on this target.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <comps>
       <li Class="HediffCompProperties_Disappears">
@@ -19,7 +19,7 @@
 <ThingDef ParentName="BaseBullet">
 		<defName>Seg_VIND_Bullet_Hellfire</defName>
 		<label>Hellfire round</label>
-		<description>Acid round.</description>
+		<description>A round filled with virulent bio-acidic toxins which can turn a target into melted ash from the inside out.</description>
 		<uiIconPath>UI/Seg_VIND_UI_Hellfire</uiIconPath>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_VIND_Hellfire</texPath>
@@ -48,7 +48,7 @@
     <ThingDef ParentName="BaseBullet">
 		<defName>Seg_VIND_Bullet_Micromelta</defName>
 		<label>Micromelta round</label>
-		<description>Highly volatile round.</description>
+		<description>A round tipped with a miniaturised melta charge, able to destroy even the toughest materials and armour.</description>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_VIND_Micromelta</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -73,9 +73,9 @@
 	</ThingDef>
     <ThingDef ParentName="BaseBullet">
 		<defName>Seg_VIND_Bullet_ShieldBreaker</defName>
-		<label>Shield Breaker round</label>
+		<label>Shield-Breaker round</label>
 		<uiIconPath>UI/Seg_VIND_UI_ShieldBreaker</uiIconPath>
-		<description>Highly effective against powered armor.</description>
+		<description>A round designed to explosively overload any void or energy shields it impacts, rendering the shield useless for the near future.</description>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_VIND_ShieldBreaker</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -100,8 +100,9 @@
 	</ThingDef>
 	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
 			<defName>Seg_VIND_Bullet_TurboPenetrator</defName>
-			<label>exitus rifle sabot</label>
+			<label>Turbo-Penetrator round</label>
 			<uiIconPath>UI/Seg_VIND_UI_TurboPenetrator</uiIconPath>
+			<description>A round with a two-stage explosive charge to punch a secondary round through even the thickest armour, and often anything standing behind it as well.</description>
 			<projectile>
 				<damageDef>Bullet</damageDef>
 				<damageAmountBase>28</damageAmountBase>
