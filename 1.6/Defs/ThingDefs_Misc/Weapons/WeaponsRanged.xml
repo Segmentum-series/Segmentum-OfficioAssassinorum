@@ -93,8 +93,8 @@
 			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisites>
-				<li>PrecisionRifling</li>
+            <researchPrerequisites>
+				<li>Seg_OA_AssassinorumAuthorisation</li>
 			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>

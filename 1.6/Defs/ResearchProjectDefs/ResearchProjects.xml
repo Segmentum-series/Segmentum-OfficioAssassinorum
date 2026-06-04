@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!-- Main research tree -->
+
+<!-- Segmentum research tree -->
+	
+<!-- Assassinorum authorisation -->
+
+<ResearchProjectDef>
+		<defName>Seg_OA_AssassinorumAuthorisation</defName>
+		<label>Assassinorum authorisation</label>
+		<description>Prepare the requisite seals and missives to authorise the deployment of the Officio Assassinorum's elite clades on the rimworld.</description>
+		<baseCost>4000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1.8</researchViewY>
+		<tab>Seg_SegmentumTab</tab>
+		<prerequisites>
+			<li>AdvancedFabrication</li>
+		</prerequisites>
+</ResearchProjectDef>
+
+</Defs>

@@ -29,7 +29,7 @@
 				<li>ElectricTailoringBench</li>
 			</recipeUsers>
             <researchPrerequisites>
-				<li>ComplexClothing</li>
+				<li>Seg_OA_AssassinorumAuthorisation</li>
 			</researchPrerequisites>
 		</recipeMaker>
 	</ThingDef>
@@ -89,12 +89,8 @@
 			</wornGraphicPaths>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisites>
-				<li>ComplexClothing</li>
-				<li>Seg_Vind_Vindicare Temple Authorisation</li>
-			</researchPrerequisites>
 			<skillRequirements>
-				<Crafting>4</Crafting>
+				<Crafting>12</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		
@@ -164,12 +160,8 @@
 			</wornGraphicPaths>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisites>
-				<li>ComplexClothing</li>
-				<li>Seg_WOTV_SpecialistApparel</li>
-			</researchPrerequisites>
 			<skillRequirements>
-				<Crafting>4</Crafting>
+				<Crafting>12</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<comps>
