@@ -1,2 +1,186 @@
 <Defs>
+<ThingDef Abstract="true" Name="Seg_VIND_ArmorBase" ParentName="ArmorMachineableBase">
+		<thingClass>Apparel</thingClass>
+		<graphicData>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Seg_WOTV_Armor</li>
+		</tradeTags>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<!--<tags></tags>-->
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+            <researchPrerequisites>
+				<li>ComplexClothing</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+    
+	<!-- Vindicare Mask -->
+		<ThingDef ParentName="Seg_WOTV_ClothingBase">
+		<defName>Seg_WOTV_Apparel_PsykerHelm</defName>
+		<label>psyker helm</label>
+		<description>This specially constructed helm serves to strengthen and regulate the warp-touched power of the psyker, making it easier for them to tap into their psykanic talents without being overwhelmed or losing control.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/PsykerHelm/Seg_WOTV_PsykerHelm</texPath>
+		</graphicData>
+
+		<equippedStatOffsets>
+			<PsychicSensitivity>1</PsychicSensitivity>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>14000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<Insulation_Cold>14.4</Insulation_Cold>
+			<Insulation_Heat>20</Insulation_Heat>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.85</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.85</VacuumResistance>
+		</statBases>
+
+		<costList>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/PsykerHelm/Seg_WOTV_PsykerHelm</li>
+			</wornGraphicPaths>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>ComplexClothing</li>
+				<li>Seg_WOTV_SpecialistApparel</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		
+		<!-- <comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Head</decorativeType>
+			</li>
+		</comps>
+		<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions> -->
+	</ThingDef>
+
+	<!--Vindicare Suit-->
+	<ThingDef ParentName="Seg_WOTV_ClothingBase">
+		<defName>Seg_WOTV_ApparelVindicareSuit</defName>
+		<label>vindicare suit</label>
+		<description>A specialized suit designed for Vindicare operatives, providing both protection and the ability to interface with advanced technology.</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/VindicareSuit/Seg_WOTV_VindicareSuit</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.85</ArmorRating_Heat>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.15</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.15</VacuumResistance>
+		</statBases>
+		<equippedStatOffsets>
+        <PsychicSensitivity>1</PsychicSensitivity>
+		</equippedStatOffsets>
+		<costList>
+			<Hyperweave>150</Hyperweave>
+			<Seg_Ceramite>15</Seg_Ceramite>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/VindicareSuit/Seg_WOTV_VindicareSuit</li>
+			</wornGraphicPaths>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>ComplexClothing</li>
+				<li>Seg_WOTV_SpecialistApparel</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Body</decorativeType>
+			</li>
+		</comps>
+		<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
+	</ThingDef>
 </Defs>
