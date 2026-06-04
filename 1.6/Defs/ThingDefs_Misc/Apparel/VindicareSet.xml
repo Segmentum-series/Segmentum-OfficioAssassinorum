@@ -47,18 +47,22 @@
 
 		<equippedStatOffsets>
 			<PsychicSensitivity>1</PsychicSensitivity>
+			<AimingDelayFactor>-1</AimingDelayFactor>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>14000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
-			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.35</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.75</ArmorRating_Heat>
 			<Insulation_Cold>14.4</Insulation_Cold>
 			<Insulation_Heat>20</Insulation_Heat>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.85</DecompressionResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.85</VacuumResistance>
+			
+			<ToxicResistance>1.00</ToxicResistance>
+			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 		</statBases>
 
 		<costList>
