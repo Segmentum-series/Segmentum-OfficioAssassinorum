@@ -67,10 +67,10 @@
 			<Mass>9</Mass>
 			<EquipDelay>1.2</EquipDelay>
 			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
-			<AccuracyTouch>0.95</AccuracyTouch>
-			<AccuracyShort>0.96</AccuracyShort>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
 			<AccuracyMedium>0.98</AccuracyMedium>
-			<AccuracyLong>0.95</AccuracyLong>
+			<AccuracyLong>0.96</AccuracyLong>
 			<WorkToMake>80000</WorkToMake>
 			<MarketValue>2530</MarketValue>
 		</statBases>
@@ -115,4 +115,70 @@
 			</li>
 		</comps> 
 	</ThingDef>
+	
+	<!-- Exitus pistol -->
+	<ThingDef ParentName="Seg_VIND_GunBase">
+		<defName>Seg_VIND_Gun_ExitusPistol</defName>
+		<label>Exitus pistol</label>
+		<description>The Exitus pistol is an extremely advanced handgun, with each gun painstakingly handmade by highly-skilled Mechanicus artisans for the Assassinorum. Generally considered a backup weapon to its sister weapon the Exitus rifle, this six-round pistol has an integral suppressor and can rapidly fire various heavy-alloy ammunition types depending on the operational necessity. If a Vindicare Assassin is discovered in the execution of their duties, the Exitus pistol can provide crucial close-quarters firepower to ensure the mission succeeds.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_VIND_ExitusRifle</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<uiIconScale>0.6</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<EquipDelay>0.6</EquipDelay>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.98</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+			<WorkToMake>60000</WorkToMake>
+			<MarketValue>2050</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_VIND_Bullet_Hellfire</defaultProjectile>
+				<soundCast>ChargeLance_Fire</soundCast> <!--Need sound to represent suppressor-->
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<warmupTime>0.6</warmupTime>
+				<range>20.9</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<muzzleFlashScale>5</muzzleFlashScale>
+			</li>
+		</verbs>
+		<costList>
+			<Plasteel>70</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+            <researchPrerequisites>
+				<li>Seg_OA_AssassinorumAuthorisation</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="Core40k.CompProperties_AmmoChanger">
+			<compClass>Core40k.Comp_AmmoChanger</compClass>
+			<availableProjectiles>
+				<li>Seg_VIND_Bullet_Hellfire</li>
+				<li>Seg_VIND_Bullet_TurboPenetrator</li>
+				<li>Seg_VIND_Bullet_Micromelta</li>
+				<li>Seg_VIND_Bullet_ShieldBreaker</li>
+
+			</availableProjectiles>
+			</li>
+		</comps> 
+	</ThingDef>	
 </Defs>
