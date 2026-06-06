@@ -42,7 +42,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Cutout</shaderType>
-			<texPath>Things/Apparel/PsykerHelm/Seg_WOTV_PsykerHelm</texPath>
+			<texPath>Things/Apparel/VindicareMask/Seg_VIND_VindicareMask</texPath>
 		</graphicData>
 
 		<equippedStatOffsets>
@@ -82,10 +82,10 @@
 				<li>Overhead</li>
 			</layers>
 			<defaultOutfitTags>
-				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPaths>
-				<li>Things/Apparel/PsykerHelm/Seg_WOTV_PsykerHelm</li>
+				<li>Things/Apparel/VindicareMask/Seg_VIND_VindicareMask</li>
 			</wornGraphicPaths>
 		</apparel>
 		<recipeMaker>
@@ -116,7 +116,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Cutout</shaderType>
-			<texPath>Things/Apparel/VindicareSuit/Seg_WOTV_VindicareSuit</texPath>
+			<texPath>Things/Apparel/VindicareSuit/Seg_VIND_VindicareSuit</texPath>
 		</graphicData>
 
 		<statBases>
@@ -153,10 +153,10 @@
 				<li>OnSkin</li>
 			</layers>
 			<defaultOutfitTags>
-				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPaths>
-				<li>Things/Apparel/VindicareSuit/Seg_WOTV_VindicareSuit</li>
+				<li>Things/Apparel/VindicareSuit/Seg_VIND_VindicareSuit</li>
 			</wornGraphicPaths>
 		</apparel>
 		<recipeMaker>
