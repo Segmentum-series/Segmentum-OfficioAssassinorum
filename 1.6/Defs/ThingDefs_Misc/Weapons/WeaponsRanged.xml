@@ -123,7 +123,7 @@
 		<description>The Exitus pistol is an extremely advanced handgun, with each gun painstakingly handmade by highly-skilled Mechanicus artisans for the Assassinorum. Generally considered a backup weapon to its sister weapon the Exitus rifle, this six-round pistol has an integral suppressor and can rapidly fire various heavy-alloy ammunition types depending on the operational necessity. If a Vindicare Assassin is discovered in the execution of their duties, the Exitus pistol can provide crucial close-quarters firepower to ensure the mission succeeds.</description>
 
 		<graphicData>
-			<texPath>Things/Weapon/Seg_VIND_ExitusRifle</texPath>
+			<texPath>Things/Weapon/Seg_VIND_ExitusPistol</texPath>
 			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.8</drawSize>
