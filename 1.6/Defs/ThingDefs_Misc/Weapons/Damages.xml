@@ -1,6 +1,6 @@
 <Defs>
  <DamageDef>
-    <defName>Seg_VIND_HellfireDamage</defName>
+    <defName>Seg_OA_HellfireDamage</defName>
     <label>hellfire acid</label>
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
@@ -16,7 +16,7 @@
     <cutCleaveBonus>1</cutCleaveBonus>
     <additionalHediffs>
       <li>
-        <hediff>Seg_VIND_HellfireBurns</hediff>
+        <hediff>Seg_OA_HellfireBurns</hediff>
 		<severityPerDamageDealt>1</severityPerDamageDealt>
       </li>
     </additionalHediffs>

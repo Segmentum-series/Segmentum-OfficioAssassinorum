@@ -1,5 +1,5 @@
 <Defs>
-<ThingDef Abstract="true" Name="Seg_VIND_ArmorBase" ParentName="ArmorMachineableBase">
+<ThingDef Abstract="true" Name="Seg_OA_ArmorBase" ParentName="ArmorMachineableBase">
 		<thingClass>Apparel</thingClass>
 		<graphicData>
 			<drawSize>1.0</drawSize>
@@ -8,14 +8,14 @@
 			<li>Apparel</li>
 		</thingCategories>
 		<tradeTags>
-			<li>Seg_WOTV_Armor</li>
+			<li>Seg_OA_Armour</li>
 		</tradeTags>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<!--<tags></tags>-->
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
 			<defaultOutfitTags>
-				<li>Worker</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
 		
@@ -35,14 +35,14 @@
 	</ThingDef>
     
 	<!-- Vindicare Mask -->
-		<ThingDef ParentName="Seg_WOTV_ClothingBase">
-		<defName>Seg_Vind_Apparel_SpyMask</defName>
+		<ThingDef ParentName="Seg_OA_ArmorBase">
+		<defName>Seg_OA_Apparel_SpyMask</defName>
 		<label>Vindicare spy mask</label>
 		<description>This incredibly advanced mask is equipped with all manner of tech which could help a Vindicare assassin on their missions: vacuum protection, a vox-caster, recording lenses, a rebreather, a built-in auspex, ballistics assistance and magnification optics. On top of that, due to the sensitive nature of the Officio Assassinorum's missions, the mask is equipped with automatic incendiary sensors and scramblers to fry its circuitry and destroy the rest of the assassin's equipment should they die in the pursuit of their mark.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Cutout</shaderType>
-			<texPath>Things/Apparel/VindicareMask/Seg_VIND_VindicareMask</texPath>
+			<texPath>Things/Apparel/VindicareMask/Seg_OA_VindicareMask</texPath>
 		</graphicData>
 
 		<equippedStatOffsets>
@@ -85,7 +85,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPaths>
-				<li>Things/Apparel/VindicareMask/Seg_VIND_VindicareMask</li>
+				<li>Things/Apparel/VindicareMask/Seg_OA_VindicareMask</li>
 			</wornGraphicPaths>
 		</apparel>
 		<recipeMaker>
@@ -109,14 +109,14 @@
 	</ThingDef>
 
 	<!--Vindicare Suit-->
-	<ThingDef ParentName="Seg_WOTV_ClothingBase">
-		<defName>Seg_Vind_Apparel_VindicareSuit</defName>
+	<ThingDef ParentName="Seg_OA_ArmorBase">
+		<defName>Seg_OA_Apparel_VindicareSuit</defName>
 		<label>Vindicare stealth suit</label>
 		<description>The Vindicare stealth suit is a combination of advanced armour-fibre weaves, body-sealing synskin and chameleon chemicals to provide camouflage when on contracts from the Temple. The suit includes a ballistic cogitator for extra accuracy and has the capability to tighten bloodflow to staunch bleeding should the assassin be wounded in the execution of their duties.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Cutout</shaderType>
-			<texPath>Things/Apparel/VindicareSuit/Seg_VIND_VindicareSuit</texPath>
+			<texPath>Things/Apparel/VindicareSuit/Seg_OA_VindicareSuit</texPath>
 		</graphicData>
 
 		<statBases>
@@ -156,7 +156,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<wornGraphicPaths>
-				<li>Things/Apparel/VindicareSuit/Seg_VIND_VindicareSuit</li>
+				<li>Things/Apparel/VindicareSuit/Seg_OA_VindicareSuit</li>
 			</wornGraphicPaths>
 		</apparel>
 		<recipeMaker>

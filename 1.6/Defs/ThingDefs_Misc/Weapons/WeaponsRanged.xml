@@ -1,6 +1,6 @@
 <Defs>
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_VIND_GunBase" Abstract="True">
-		<label>Seg_VIND_GunBase</label>
+		<label>Seg_OA_GunBase</label>
 		<description>Base definition for that Skitarii rifle thing i cant be assed to spell again.this should never show in game, if it does report to KitchenSink.</description>
 		<techLevel>Spacer</techLevel>
 		<recipeMaker>
@@ -51,13 +51,13 @@
 	</ThingDef>
 
 	<!-- Exitus rifle -->
-	<ThingDef ParentName="Seg_VIND_GunBase">
-		<defName>Seg_VIND_Gun_ExitusRifle</defName>
+	<ThingDef ParentName="Seg_OA_GunBase">
+		<defName>Seg_OA_Gun_ExitusRifle</defName>
 		<label>Exitus rifle</label>
 		<description>The Exitus rifle is an extremely advanced sniper rifle, with each gun painstakingly handmade by highly-skilled Mechanicus artisans for the Assassinorum. Reliable beyond compare and millimetre-accurate when used by an assassin of the Vindicare temple, the rifle can fire various heavy-alloy ammunition types depending on the operational necessity. An assassin treats their rifle as if it is an extension of their body, and losing one in the field is grounds for extreme penance if the assassin returns alive.</description>
 
 		<graphicData>
-			<texPath>Things/Weapon/Seg_VIND_ExitusRifle</texPath>
+			<texPath>Things/Weapon/Seg_OA_ExitusRifle</texPath>
 			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.8</drawSize>
@@ -78,7 +78,7 @@
 			<li>
 				<verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Seg_VIND_Bullet_Hellfire</defaultProjectile>
+				<defaultProjectile>Seg_OA_Bullet_Hellfire</defaultProjectile>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<warmupTime>2</warmupTime>
@@ -106,10 +106,10 @@
 			<li Class="Core40k.CompProperties_AmmoChanger">
 			<compClass>Core40k.Comp_AmmoChanger</compClass>
 			<availableProjectiles>
-				<li>Seg_VIND_Bullet_Hellfire</li>
-				<li>Seg_VIND_Bullet_TurboPenetrator</li>
-				<li>Seg_VIND_Bullet_Micromelta</li>
-				<li>Seg_VIND_Bullet_ShieldBreaker</li>
+				<li>Seg_OA_Bullet_Hellfire</li>
+				<li>Seg_OA_Bullet_TurboPenetrator</li>
+				<li>Seg_OA_Bullet_Micromelta</li>
+				<li>Seg_OA_Bullet_ShieldBreaker</li>
 
 			</availableProjectiles>
 			</li>
@@ -118,12 +118,12 @@
 	
 	<!-- Exitus pistol -->
 	<ThingDef ParentName="Seg_VIND_GunBase">
-		<defName>Seg_VIND_Gun_ExitusPistol</defName>
+		<defName>Seg_OA_Gun_ExitusPistol</defName>
 		<label>Exitus pistol</label>
 		<description>The Exitus pistol is an extremely advanced handgun, with each gun painstakingly handmade by highly-skilled Mechanicus artisans for the Assassinorum. Generally considered a backup weapon to its sister weapon the Exitus rifle, this six-round pistol has an integral suppressor and can rapidly fire various heavy-alloy ammunition types depending on the operational necessity. If a Vindicare Assassin is discovered in the execution of their duties, the Exitus pistol can provide crucial close-quarters firepower to ensure the mission succeeds.</description>
 
 		<graphicData>
-			<texPath>Things/Weapon/Seg_VIND_ExitusPistol</texPath>
+			<texPath>Things/Weapon/Seg_OA_ExitusPistol</texPath>
 			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.8</drawSize>
@@ -144,7 +144,7 @@
 			<li>
 				<verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Seg_VIND_Bullet_Hellfire</defaultProjectile>
+				<defaultProjectile>Seg_OA_Bullet_Hellfire</defaultProjectile>
 				<soundCast>ChargeLance_Fire</soundCast> <!--Need sound to represent suppressor-->
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<warmupTime>0.6</warmupTime>
@@ -172,10 +172,10 @@
 			<li Class="Core40k.CompProperties_AmmoChanger">
 			<compClass>Core40k.Comp_AmmoChanger</compClass>
 			<availableProjectiles>
-				<li>Seg_VIND_Bullet_Hellfire</li>
-				<li>Seg_VIND_Bullet_TurboPenetrator</li>
-				<li>Seg_VIND_Bullet_Micromelta</li>
-				<li>Seg_VIND_Bullet_ShieldBreaker</li>
+				<li>Seg_OA_Bullet_Hellfire</li>
+				<li>Seg_OA_Bullet_TurboPenetrator</li>
+				<li>Seg_OA_Bullet_Micromelta</li>
+				<li>Seg_OA_Bullet_ShieldBreaker</li>
 
 			</availableProjectiles>
 			</li>
