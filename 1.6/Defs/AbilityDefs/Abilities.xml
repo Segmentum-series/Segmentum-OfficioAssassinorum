@@ -1,6 +1,6 @@
 <Defs>
 
-	<!-- Hunker Down -->
+	<!-- Ballistic cogitator -->
 	<AbilityDef>
 		<defName>Seg_OA_VindicareMaskAbility</defName>
 		<label>enable ballistic cogitator</label>
