@@ -36,7 +36,7 @@
 		<speed>90</speed>
 		</projectile>
 		<recipeMaker>
-			<researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
+			<!--researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite-->
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>

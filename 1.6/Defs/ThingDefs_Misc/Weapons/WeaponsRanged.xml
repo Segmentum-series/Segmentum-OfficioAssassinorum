@@ -1,12 +1,12 @@
 <Defs>
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_VIND_GunBase" Abstract="True">
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_OA_GunBase" Abstract="True">
 		<label>Seg_OA_GunBase</label>
 		<description>Base definition for that Skitarii rifle thing i cant be assed to spell again.this should never show in game, if it does report to KitchenSink.</description>
 		<techLevel>Spacer</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 			<recipeUsers Inherit="False">
-				<li>FabricationBench</li>
+				<li>Seg_ImperialCraftingTable</li>
 			</recipeUsers>
 		</recipeMaker>
 		<comps>
@@ -41,7 +41,7 @@
 					<li>Blunt</li>
 					<li>Poke</li>
 				</capacities>
-				<power>20</power>
+				<power>9</power>
 				<cooldownTime>4</cooldownTime>
 			</li>
 		</tools>
@@ -110,14 +110,13 @@
 				<li>Seg_OA_Bullet_TurboPenetrator</li>
 				<li>Seg_OA_Bullet_Micromelta</li>
 				<li>Seg_OA_Bullet_ShieldBreaker</li>
-
 			</availableProjectiles>
 			</li>
 		</comps> 
 	</ThingDef>
 	
 	<!-- Exitus pistol -->
-	<ThingDef ParentName="Seg_VIND_GunBase">
+	<ThingDef ParentName="Seg_OA_GunBase">
 		<defName>Seg_OA_Gun_ExitusPistol</defName>
 		<label>Exitus pistol</label>
 		<description>The Exitus pistol is an extremely advanced handgun, with each gun painstakingly handmade by highly-skilled Mechanicus artisans for the Assassinorum. Generally considered a backup weapon to its sister weapon the Exitus rifle, this six-round pistol has an integral suppressor and can rapidly fire various heavy-alloy ammunition types depending on the operational necessity. If a Vindicare Assassin is discovered in the execution of their duties, the Exitus pistol can provide crucial close-quarters firepower to ensure the mission succeeds.</description>
@@ -176,9 +175,27 @@
 				<li>Seg_OA_Bullet_TurboPenetrator</li>
 				<li>Seg_OA_Bullet_Micromelta</li>
 				<li>Seg_OA_Bullet_ShieldBreaker</li>
-
 			</availableProjectiles>
 			</li>
 		</comps> 
+		<tools Inherit="False">
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
 	</ThingDef>	
 </Defs>
