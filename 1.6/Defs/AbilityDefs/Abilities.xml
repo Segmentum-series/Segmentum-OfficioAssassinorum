@@ -1,45 +1,48 @@
 <Defs>
-<AbilityDef>
-        <defName>Seg_OA_VindicareMaskAbility</defName>
-        <label>Hunker Down</label>
-        <description>Tap into your combat training, take a breath, slow down and anhilate all who stand before you.</description>
-        <iconPath>UI/Abilities/Seg_COTO_Ability_ShiveringFrenzy</iconPath>
-        <cooldownTicksRange>90000</cooldownTicksRange>
-        <jobDef>CastAbilityOnThing</jobDef>
-        <casterMustBeCapableOfViolence>False</casterMustBeCapableOfViolence>
-        <targetRequired>False</targetRequired>
-        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
-        <stunTargetWhileCasting>True</stunTargetWhileCasting>
-        <showPsycastEffects>False</showPsycastEffects>
-        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-        <verbProperties>
-            <verbClass>Verb_CastAbility</verbClass>
-            <warmupTime>0.5</warmupTime>
-            <drawAimPie>False</drawAimPie>
-            <requireLineOfSight>False</requireLineOfSight>
-            <targetParams>
-                <canTargetSelf>true</canTargetSelf>
-                <canTargetPawns>false</canTargetPawns>
-                <canTargetBuildings>false</canTargetBuildings>
-                <canTargetAnimals>false</canTargetAnimals>
-                <canTargetHumans>false</canTargetHumans>
-                <canTargetMechs>false</canTargetMechs>
-            </targetParams>
-        </verbProperties>
-        <statBases>
-            <Ability_Duration>125</Ability_Duration>
-        </statBases>
-        <comps>
-            <li Class="CompProperties_AbilityGiveHediff">
-                <compClass>CompAbilityEffect_GiveHediff</compClass>
-                <hediffDef>Seg_OA_VindicareMaskAbilityBuff</hediffDef>
-                <onlyApplyToSelf>True</onlyApplyToSelf>
-                <replaceExisting>true</replaceExisting>
-            </li>
-        </comps>
-    </AbilityDef>
-    <HediffDef ParentName="BEWH_StatAlteringHediffDef">
+
+	<!-- Hunker Down -->
+	<AbilityDef>
+		<defName>Seg_OA_VindicareMaskAbility</defName>
+		<label>Hunker down</label>
+		<description>Tap into your combat training, take a breath, slow down and anhilate all who stand before you.</description>
+		<iconPath>UI/Abilities/Seg_OA_VindicareMaskAbility</iconPath>
+		<cooldownTicksRange>90000</cooldownTicksRange>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<casterMustBeCapableOfViolence>False</casterMustBeCapableOfViolence>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<statBases>
+			<Ability_Duration>125</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Seg_OA_VindicareMaskAbilityBuff</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<HediffDef ParentName="BEWH_StatAlteringHediffDef">
 		<defName>Seg_OA_VindicareMaskAbilityBuff</defName>
 		<label>Hunkering down!</label>
 		<description>{PAWN_nameDef} is hunkering down. they move much more slowly but have devistating ranged firepower.</description>
@@ -47,59 +50,62 @@
 			<li>
 				<statFactors>
 					<MoveSpeed>-2.5</MoveSpeed>
-                    <AimingDelayFactor>0.5</AimingDelayFactor>
+					<AimingDelayFactor>0.5</AimingDelayFactor>
 					<RangedCooldownFactor>0.5</RangedCooldownFactor>
 				</statFactors>
 				<statOffsets>
 					<MeleeDodgeChance>-20</MeleeDodgeChance>
-                     <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
 				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>
- <AbilityDef>
-        <defName>Seg_OA_SuitStims</defName>
-        <label>Activate Suit Stims</label>
-        <description>Provides emergency treatment to yourself, administering stimulants to ease pain and speed healing. The quick, precise care tends to all the pawn's wounds, providing a slight but immediate recovery.</description>
-        <cooldownTicksRange>60000</cooldownTicksRange>
-        <iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
-        <jobDef>CastAbilityOnThing</jobDef>
-        <casterMustBeCapableOfViolence>False</casterMustBeCapableOfViolence>
-        <targetRequired>False</targetRequired>
-        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
-        <stunTargetWhileCasting>True</stunTargetWhileCasting>
-        <showPsycastEffects>False</showPsycastEffects>
-        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-        <verbProperties>
-            <verbClass>Verb_CastAbility</verbClass>
-            <warmupTime>0.5</warmupTime>
-            <drawAimPie>False</drawAimPie>
-            <requireLineOfSight>False</requireLineOfSight>
-            <targetParams>
-                <canTargetSelf>true</canTargetSelf>
-                <canTargetPawns>false</canTargetPawns>
-                <canTargetBuildings>false</canTargetBuildings>
-                <canTargetAnimals>false</canTargetAnimals>
-                <canTargetHumans>false</canTargetHumans>
-                <canTargetMechs>false</canTargetMechs>
-            </targetParams>
-        </verbProperties>
-        <statBases>
-            <Ability_Duration>125</Ability_Duration>
-        </statBases>
-        <comps>
-            <li Class="Core40k.CompProperties_AbilityHealAndTend">
-                <healAmount>5~10</healAmount>
-            </li>
-            <li Class="CompProperties_AbilityGiveHediff">
-                <compClass>CompAbilityEffect_GiveHediff</compClass>
-                <hediffDef>Seg_OA_SuitStimsBuff</hediffDef>
-                <replaceExisting>true</replaceExisting>
-            </li>
-        </comps>
-    </AbilityDef>
-    <HediffDef ParentName="BEWH_StatAlteringHediffDef">
+
+	<!-- Activate suit stims -->
+	<AbilityDef>
+		<defName>Seg_OA_SuitStims</defName>
+		<label>activate suit stims</label>
+		<description>Provides emergency treatment to yourself, administering stimulants to ease pain and speed healing. The quick, precise care tends to all the pawn's wounds, providing a slight but immediate recovery.</description>
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<iconPath>UI/Abilities/Seg_OA_VindicareSuitStims</iconPath>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<casterMustBeCapableOfViolence>False</casterMustBeCapableOfViolence>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<statBases>
+			<Ability_Duration>125</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="Core40k.CompProperties_AbilityHealAndTend">
+				<healAmount>5~10</healAmount>
+			</li>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Seg_OA_SuitStimsBuff</hediffDef>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<HediffDef ParentName="BEWH_StatAlteringHediffDef">
 		<defName>Seg_OA_SuitStimsBuff</defName>
 		<label>stimulants</label>
 		<description>This character is under the effects of emergency stimulants that relieve pain and increase healing speed. Their body is temporarily revitalized, reducing fatigue and speeding recovery, but the effects are short-lived and they may need further care.</description>
@@ -107,7 +113,7 @@
 			<li>
 				<statOffsets>
 					<InjuryHealingFactor>0.8</InjuryHealingFactor>
-                    <MoveSpeed>3</MoveSpeed>
+					<MoveSpeed>3</MoveSpeed>
 				</statOffsets>
 				<capMods>
 					<li>
