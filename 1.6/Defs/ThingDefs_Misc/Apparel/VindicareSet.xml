@@ -36,7 +36,7 @@
     
 	<!-- Vindicare Mask -->
 		<ThingDef ParentName="Seg_OA_ArmorBase">
-		<defName>Seg_OA_Apparel_SpyMask</defName>
+		<defName>Seg_OA_Apparel_VindicareMask</defName>
 		<label>Vindicare spy mask</label>
 		<description>This incredibly advanced mask is equipped with all manner of tech which could help a Vindicare assassin on their missions: vacuum protection, a vox-caster, recording lenses, a rebreather, a built-in auspex, ballistics assistance and magnification optics. On top of that, due to the sensitive nature of the Officio Assassinorum's missions, the mask is equipped with automatic incendiary sensors and scramblers to fry its circuitry and destroy the rest of the assassin's equipment should they die in the pursuit of their mark.</description>
 		<graphicData>
