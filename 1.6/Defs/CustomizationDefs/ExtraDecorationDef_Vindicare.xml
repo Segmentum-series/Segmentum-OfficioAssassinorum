@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Upper straps w/ belt -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_OA_Deco_VindicareSuit_UpperStrapsWBelt</defName>
+		<label>Upper straps w/ belt</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Seg_OA_Deco_VindicareSuit_UpperStrapsWBelt</iconPath>
+		<drawnTextureIconPath>Things/Decoration/VindicareSuit/Seg_OA_VindicareSuit_UpperStrapsWBelt</drawnTextureIconPath>
+		<sortOrder>1</sortOrder>
+		<drawSize>(0.7,0.7)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_OA_Apparel_VindicareSuit</li>
+		</appliesTo>
+		<colourable>false</colourable>
+
+		<drawData>
+			<dataNorth>
+				<layer>90</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>25</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>25</layer>
+			</dataEast>
+			<dataWest>
+				<layer>25</layer>
+			</dataWest>
+		</drawData>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Upper straps -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_OA_Deco_VindicareSuit_UpperStraps</defName>
+		<label>Upper straps</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Seg_OA_Deco_VindicareSuit_UpperStraps</iconPath>
+		<drawnTextureIconPath>Things/Decoration/VindicareSuit/Seg_OA_VindicareSuit_UpperStraps</drawnTextureIconPath>
+		<sortOrder>2</sortOrder>
+		<drawSize>(0.7,0.7)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_OA_Apparel_VindicareSuit</li>
+		</appliesTo>
+		<colourable>false</colourable>
+
+		<drawData>
+			<dataNorth>
+				<layer>90</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>25</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>25</layer>
+			</dataEast>
+			<dataWest>
+				<layer>25</layer>
+			</dataWest>
+		</drawData>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Dark upper straps -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_OA_Deco_VindicareSuit_DarkUpperStraps</defName>
+		<label>Dark upper straps</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Seg_OA_Deco_VindicareSuit_DarkUpperStraps</iconPath>
+		<drawnTextureIconPath>Things/Decoration/VindicareSuit/Seg_OA_VindicareSuit_DarkUpperStraps</drawnTextureIconPath>
+		<sortOrder>3</sortOrder>
+		<drawSize>(0.7,0.7)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_OA_Apparel_VindicareSuit</li>
+		</appliesTo>
+		<colourable>false</colourable>
+
+		<drawData>
+			<dataNorth>
+				<layer>90</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>25</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>25</layer>
+			</dataEast>
+			<dataWest>
+				<layer>25</layer>
+			</dataWest>
+		</drawData>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Red belt -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_OA_Deco_VindicareSuit_RedBelt</defName>
+		<label>Red belt</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Seg_OA_Deco_VindicareSuit_RedBelt</iconPath>
+		<drawnTextureIconPath>Things/Decoration/VindicareSuit/Seg_OA_VindicareSuit_RedBelt</drawnTextureIconPath>
+		<sortOrder>4</sortOrder>
+		<drawSize>(0.7,0.7)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_OA_Apparel_VindicareSuit</li>
+		</appliesTo>
+		<colourable>false</colourable>
+
+		<drawData>
+			<dataNorth>
+				<layer>90</layer>
+				<offset>(0, 0, -0.2)</offset>
+			</dataNorth>
+			<dataSouth>
+				<layer>25</layer>
+				<offset>(0, 0, -0.2)</offset>
+			</dataSouth>
+			<dataEast>
+				<layer>25</layer>
+				<offset>(0, 0, -0.2)</offset>
+			</dataEast>
+			<dataWest>
+				<layer>25</layer>
+				<offset>(0, 0, -0.2)</offset>
+			</dataWest>
+		</drawData>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Dark belt -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_OA_Deco_VindicareSuit_DarkBelt</defName>
+		<label>Dark belt</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Seg_OA_Deco_VindicareSuit_DarkBelt</iconPath>
+		<drawnTextureIconPath>Things/Decoration/VindicareSuit/Seg_OA_VindicareSuit_DarkBelt</drawnTextureIconPath>
+		<sortOrder>5</sortOrder>
+		<drawSize>(0.7,0.7)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_OA_Apparel_VindicareSuit</li>
+		</appliesTo>
+		<colourable>false</colourable>
+
+		<drawData>
+			<dataNorth>
+				<layer>90</layer>
+				<offset>(0, 0, -0.2)</offset>
+			</dataNorth>
+			<dataSouth>
+				<layer>25</layer>
+				<offset>(0, 0, -0.2)</offset>
+			</dataSouth>
+			<dataEast>
+				<layer>25</layer>
+				<offset>(0, 0, -0.2)</offset>
+			</dataEast>
+			<dataWest>
+				<layer>25</layer>
+				<offset>(0, 0, -0.2)</offset>
+			</dataWest>
+		</drawData>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Holster -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_OA_Deco_VindicareSuit_Holster</defName>
+		<label>Holster</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Seg_OA_Deco_VindicareSuit_Holster</iconPath>
+		<drawnTextureIconPath>Things/Decoration/VindicareSuit/Seg_OA_VindicareSuit_Holster</drawnTextureIconPath>
+		<sortOrder>6</sortOrder>
+		<drawSize>(0.7,0.7)</drawSize>
+
+		<defaultShowRotation>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_OA_Apparel_VindicareSuit</li>
+		</appliesTo>
+		<flipable>true</flipable>
+		<colourable>false</colourable>
+
+		<drawData>
+			<dataEast>
+				<layer>32</layer>
+				<offset>(0, 0, -0.25)</offset>
+				<flip>true</flip>
+			</dataEast>
+			<dataNorth>
+				<layer>93</layer>
+				<offset>(0, 0, -0.25)</offset>
+			</dataNorth>
+			<dataSouth>
+				<layer>28</layer>
+				<offset>(0, 0, -0.25)</offset>
+			</dataSouth>
+			<dataWest>
+				<layer>32</layer>
+				<offset>(0, 0, -0.25)</offset>
+			</dataWest>
+		</drawData>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Pouches -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_OA_Deco_VindicareSuit_Pouches</defName>
+		<label>Pouches</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Seg_OA_Deco_VindicareSuit_Pouches</iconPath>
+		<drawnTextureIconPath>Things/Decoration/VindicareSuit/Seg_OA_VindicareSuit_Pouches</drawnTextureIconPath>
+		<sortOrder>7</sortOrder>
+		<drawSize>(0.5,0.5)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_OA_Apparel_VindicareSuit</li>
+		</appliesTo>
+		<flipable>true</flipable>
+		<colourable>false</colourable>
+
+		<drawData>
+			<dataNorth>
+				<layer>99</layer>
+				<offset>(0, 0, -0.35)</offset>
+			</dataNorth>
+			<dataEast>
+				<layer>30</layer>
+				<offset>(-0.35, 0, -0.35)</offset>
+			</dataEast>
+			<dataWest>
+				<layer>30</layer>
+				<flip>true</flip>
+				<offset>(0.35, 0, -0.35)</offset>
+			</dataWest>
+		</drawData>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Shock grenade -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_OA_Deco_VindicareSuit_ShockGrenade</defName>
+		<label>Shock grenade</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Seg_OA_Deco_VindicareSuit_ShockGrenade</iconPath>
+		<drawnTextureIconPath>Things/Decoration/VindicareSuit/Seg_OA_VindicareSuit_ShockGrenade</drawnTextureIconPath>
+		<sortOrder>7</sortOrder>
+		<drawSize>(0.5,0.5)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_OA_Apparel_VindicareSuit</li>
+		</appliesTo>
+		<flipable>true</flipable>
+		<colourable>false</colourable>
+
+		<drawData>
+			<dataEast>
+				<layer>28</layer>
+				<offset>(0, 0, -0.4)</offset>
+			</dataEast>
+			<dataSouth>
+				<layer>30</layer>
+				<offset>(0, 0, -0.4)</offset>
+			</dataSouth>
+			<dataWest>
+				<layer>28</layer>
+				<offset>(0, 0, -0.4)</offset>
+				<flip>true</flip>
+			</dataWest>
+		</drawData>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Frag grenade -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_OA_Deco_VindicareSuit_FragGrenade</defName>
+		<label>Frag grenade</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Seg_OA_Deco_VindicareSuit_FragGrenade</iconPath>
+		<drawnTextureIconPath>Things/Decoration/VindicareSuit/Seg_OA_VindicareSuit_FragGrenade</drawnTextureIconPath>
+		<sortOrder>7</sortOrder>
+		<drawSize>(0.5,0.5)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_OA_Apparel_VindicareSuit</li>
+		</appliesTo>
+		<flipable>true</flipable>
+		<colourable>false</colourable>
+
+		<drawData>
+			<dataEast>
+				<layer>28</layer>
+				<offset>(-0.38, 0, -0.35)</offset>
+			</dataEast>
+			<dataNorth>
+				<layer>103</layer>
+				<offset>(0, 0, -0.35)</offset>
+			</dataNorth>
+			<dataWest>
+				<layer>28</layer>
+				<offset>(0.38, 0, -0.35)</offset>
+				<flip>true</flip>
+			</dataWest>
+		</drawData>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+</Defs>

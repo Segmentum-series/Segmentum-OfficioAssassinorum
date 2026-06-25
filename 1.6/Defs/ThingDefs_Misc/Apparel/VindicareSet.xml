@@ -162,7 +162,8 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<layers>
-				<li>OnSkin</li>
+				<li>Middle</li>
+				<li>Shell</li>
 			</layers>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -194,12 +195,12 @@
    			 </li>
 		</comps>
 		<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
+
 </Defs>
