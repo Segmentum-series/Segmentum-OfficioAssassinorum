@@ -74,10 +74,11 @@
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
+			<li>Headgear</li>
 			</tags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
 			<bodyPartGroups>
-				<li>UpperHead</li>
+				<li>FullHead</li>
 			</bodyPartGroups>
 			<layers>
 				<li>Overhead</li>
