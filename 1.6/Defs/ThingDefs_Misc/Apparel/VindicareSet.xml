@@ -48,6 +48,7 @@
 		<equippedStatOffsets>
 			<PsychicSensitivity>1</PsychicSensitivity>
 			<AimingDelayFactor>-1</AimingDelayFactor>
+			<ShootingAccuracyPawn>.2</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>14000</WorkToMake>
@@ -94,12 +95,20 @@
 			</skillRequirements>
 		</recipeMaker>
 		
-		<!-- <comps>
-			<li Class="Core40k.CompProperties_Decorative">
-				<decorativeType>Head</decorativeType>
+		<comps>
+			<li Class="Core40k.CompProperties_GivesAbility">
+				<ability>Seg_OA_VindicareMaskAbility</ability>
 			</li>
+			<li Class="seg.CompProperties_VanishOnDeath">
+				<fleck>Fleck_HeatWaveDistortion</fleck>
+				<mote>Mote_BerserkBit</mote>
+				<moteCount>1</moteCount>
+				<moteOffsetRange>0.25~0.75</moteOffsetRange>
+				<filth>Filth_Ash</filth>
+				<filthCount>4</filthCount>
+   			 </li>
 		</comps>
-		<modExtensions>
+		<!--<modExtensions>
             <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
                 <tabDefs>
                     <li>BEWH_ArmorDecoration</li>
@@ -132,7 +141,9 @@
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.15</VacuumResistance>
 		</statBases>
 		<equippedStatOffsets>
-        <PsychicSensitivity>1</PsychicSensitivity>
+        	<PsychicSensitivity>1</PsychicSensitivity>
+			<IncomingDamageFactor>-.5</IncomingDamageFactor>
+			<ShootingAccuracyPawn>.3</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
 			<Hyperweave>150</Hyperweave>
@@ -168,6 +179,18 @@
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Body</decorativeType>
 			</li>
+			<li Class="Core40k.CompProperties_GivesAbility">
+				<ability>Seg_OA_SuitStims</ability>
+			</li>
+			
+    		<li Class="seg.CompProperties_VanishOnDeath">
+				<fleck>Fleck_HeatWaveDistortion</fleck>
+				<mote>Mote_BerserkBit</mote>
+				<moteCount>1</moteCount>
+				<moteOffsetRange>0.25~0.75</moteOffsetRange>
+				<filth>Filth_Ash</filth>
+				<filthCount>4</filthCount>
+   			 </li>
 		</comps>
 		<modExtensions>
             <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">

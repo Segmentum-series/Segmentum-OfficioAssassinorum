@@ -56,15 +56,19 @@
 		<defName>Seg_OA_Bullet_Micromelta</defName>
 		<label>Micromelta round</label>
 		<description>A round tipped with a miniaturised melta charge, able to destroy even the toughest materials and armour.</description>
+		 <thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_OA_Micromelta</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconPath>UI/Projectile/Seg_OA_UI_Micromelta</uiIconPath>
 		<projectile>
-			<damageDef>Vaporize</damageDef>
+			<damageDef>Thump</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<stoppingPower>.5</stoppingPower>
+			<explosionRadius>1.1</explosionRadius>
+            <speed>60</speed>
+			<explosionEffect>Seg_MeltaHit</explosionEffect>
 		<speed>750</speed>
 		</projectile>
 		<costList>
