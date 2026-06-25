@@ -134,7 +134,7 @@
 			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
 			<AccuracyTouch>0.98</AccuracyTouch>
 			<AccuracyShort>0.95</AccuracyShort>
-			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.25</AccuracyLong>
 			<WorkToMake>60000</WorkToMake>
 			<MarketValue>2050</MarketValue>
