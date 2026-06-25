@@ -3,10 +3,10 @@
 	<!-- Hunker Down -->
 	<AbilityDef>
 		<defName>Seg_OA_VindicareMaskAbility</defName>
-		<label>Hunker down</label>
-		<description>Tap into your combat training, take a breath, slow down and anhilate all who stand before you.</description>
+		<label>enable ballistic cogitator</label>
+        <description>Let the spy mask's integrated cogitators calculate trajectories, velocities, and even likely exit wounds of every bullet fired by the wearer for a short duration.</description>
 		<iconPath>UI/Abilities/Seg_OA_VindicareMaskAbility</iconPath>
-		<cooldownTicksRange>90000</cooldownTicksRange>
+		<cooldownTicksRange>5000</cooldownTicksRange>
 		<jobDef>CastAbilityOnThing</jobDef>
 		<casterMustBeCapableOfViolence>False</casterMustBeCapableOfViolence>
 		<targetRequired>False</targetRequired>
@@ -44,18 +44,16 @@
 
 	<HediffDef ParentName="BEWH_StatAlteringHediffDef">
 		<defName>Seg_OA_VindicareMaskAbilityBuff</defName>
-		<label>Hunkering down!</label>
-		<description>{PAWN_nameDef} is hunkering down. they move much more slowly but have devistating ranged firepower.</description>
+		<label>Ballistic cogitator active</label>
+		<description>{PAWN_nameDef} has enabled the spy mask's integrated ballistic cogitator. The machine spirits and sacred algorithms of Mars are guiding every shot fired.</description>
 		<stages>
 			<li>
 				<statFactors>
-					<MoveSpeed>-2.5</MoveSpeed>
-					<AimingDelayFactor>0.5</AimingDelayFactor>
-					<RangedCooldownFactor>0.5</RangedCooldownFactor>
+					<AimingDelayFactor>0.4</AimingDelayFactor>
+					<RangedCooldownFactor>0.4</RangedCooldownFactor>
 				</statFactors>
 				<statOffsets>
-					<MeleeDodgeChance>-20</MeleeDodgeChance>
-					<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>10</ShootingAccuracyPawn>
 				</statOffsets>
 			</li>
 		</stages>
@@ -64,8 +62,8 @@
 	<!-- Activate suit stims -->
 	<AbilityDef>
 		<defName>Seg_OA_SuitStims</defName>
-		<label>activate suit stims</label>
-		<description>Provides emergency treatment to yourself, administering stimulants to ease pain and speed healing. The quick, precise care tends to all the pawn's wounds, providing a slight but immediate recovery.</description>
+        <label>activate emergency medicae</label>
+        <description>The stealth suit activates emergency medical treatment for the wearer, automatically tightening to staunch bleeding wounds and administering chemical stimulants to neutralise pain and boost reactions in extremity.</description>
 		<cooldownTicksRange>60000</cooldownTicksRange>
 		<iconPath>UI/Abilities/Seg_OA_VindicareSuitStims</iconPath>
 		<jobDef>CastAbilityOnThing</jobDef>
@@ -95,7 +93,7 @@
 		</statBases>
 		<comps>
 			<li Class="Core40k.CompProperties_AbilityHealAndTend">
-				<healAmount>5~10</healAmount>
+                <healAmount>1~4</healAmount>
 			</li>
 			<li Class="CompProperties_AbilityGiveHediff">
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
@@ -107,21 +105,20 @@
 
 	<HediffDef ParentName="BEWH_StatAlteringHediffDef">
 		<defName>Seg_OA_SuitStimsBuff</defName>
-		<label>stimulants</label>
-		<description>This character is under the effects of emergency stimulants that relieve pain and increase healing speed. Their body is temporarily revitalized, reducing fatigue and speeding recovery, but the effects are short-lived and they may need further care.</description>
+		<label>medicae stimulants</label>
+		<description>The Vindicare stealth suit has administered emergency medicae stimulants to enable continued function of the assassin. The mission is all. The kill is all.</description>
 		<stages>
 			<li>
 				<statOffsets>
-					<InjuryHealingFactor>0.8</InjuryHealingFactor>
 					<MoveSpeed>3</MoveSpeed>
 				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
-						<offset>-0.15</offset>
+						<offset>0.10</offset>
 					</li>
 				</capMods>
-				<painFactor>0.33</painFactor>
+				<painFactor>0.40</painFactor>
 			</li>
 		</stages>
 	</HediffDef>
