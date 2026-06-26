@@ -28,6 +28,7 @@
 		<graphicData>
 			<texPath>Things/Projectile/Seg_OA_Hellfire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.65</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>Seg_OA_HellfireDamage</damageDef>
@@ -60,15 +61,16 @@
 		<graphicData>
 			<texPath>Things/Projectile/Seg_OA_Micromelta</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.65</drawSize>
 		</graphicData>
 		<uiIconPath>UI/Projectile/Seg_OA_UI_Micromelta</uiIconPath>
 		<projectile>
-			<damageDef>Thump</damageDef>
+			<damageDef>Seg_OA_Micromelta_Damage</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<stoppingPower>.5</stoppingPower>
 			<explosionRadius>1.1</explosionRadius>
             <speed>60</speed>
-			<explosionEffect>Seg_MeltaHit</explosionEffect>
+			<explosionEffect>Power_Cell_Burning</explosionEffect>
 		<speed>750</speed>
 		</projectile>
 		<costList>
@@ -92,6 +94,7 @@
 		<graphicData>
 			<texPath>Things/Projectile/Seg_OA_ShieldBreaker</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.65</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
@@ -116,6 +119,7 @@
 	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>Seg_OA_Bullet_TurboPenetrator</defName>
 		<label>Turbo-Penetrator round</label>
+		<totalSizeScale>.65</totalSizeScale>
 		<uiIconPath>UI/Projectile/Seg_OA_UI_TurboPenetrator</uiIconPath>
 		<description>A round with a two-stage explosive charge to punch a secondary round through even the thickest armour, and often anything standing behind it as well.</description>
 		<projectile>

@@ -21,4 +21,31 @@
       </li>
     </additionalHediffs>
   </DamageDef>
+  
+  <DamageDef>
+    <defName>Seg_OA_Micromelta_Damage</defName>
+    <label>thump</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Burn</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>5</defaultDamage>
+    <defaultArmorPenetration>2</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>30</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>15</buildingDamageFactorPassable>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(1, 0.58, 0.21)</explosionColorCenter>
+    <explosionColorEdge>(1, 0.58, 0.21)</explosionColorEdge>
+    <soundExplosion>Explosion_Thump</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+
 </Defs>
