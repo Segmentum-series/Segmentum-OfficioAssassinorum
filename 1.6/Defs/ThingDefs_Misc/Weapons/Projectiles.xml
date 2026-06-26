@@ -131,7 +131,7 @@
 			<texPathFadeOut>Things/Projectile/Seg_OA_TurboPenetratorFadeOut</texPathFadeOut>
 		</graphicData>
 		<reachMaxRangeAlways>true</reachMaxRangeAlways>
-		<minDistanceToAffect>1.9</minDistanceToAffect>
+		<minDistanceToAffect>4.9</minDistanceToAffect>
 		<drawOffscreen>true</drawOffscreen>
 		<lifeTimeDuration>50</lifeTimeDuration>
 		<widthScaleFactor>0.10</widthScaleFactor>

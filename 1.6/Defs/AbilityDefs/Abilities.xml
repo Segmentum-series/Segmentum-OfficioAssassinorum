@@ -17,7 +17,7 @@
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<warmupTime>0.5</warmupTime>
+			<warmupTime>0.2</warmupTime>
 			<drawAimPie>False</drawAimPie>
 			<requireLineOfSight>False</requireLineOfSight>
 			<targetParams>
@@ -30,7 +30,7 @@
 			</targetParams>
 		</verbProperties>
 		<statBases>
-			<Ability_Duration>125</Ability_Duration>
+			<Ability_Duration>60</Ability_Duration>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_AbilityGiveHediff">
@@ -76,7 +76,7 @@
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<warmupTime>0.5</warmupTime>
+			<warmupTime>0.2</warmupTime>
 			<drawAimPie>False</drawAimPie>
 			<requireLineOfSight>False</requireLineOfSight>
 			<targetParams>
