@@ -56,6 +56,7 @@
 		<label>Exitus rifle</label>
 		<description>The Exitus rifle is an extremely advanced sniper rifle, with each gun painstakingly handmade by highly-skilled Mechanicus artisans for the Assassinorum. Reliable beyond compare and millimetre-accurate when used by an assassin of the Vindicare temple, the rifle can fire various heavy-alloy ammunition types depending on the operational necessity. An assassin treats their rifle as if it is an extension of their body, and losing one in the field is grounds for extreme penance if the assassin returns alive.</description>
 
+		<equippedAngleOffset>45</equippedAngleOffset>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_OA_ExitusRifle</texPath>
 			<shaderType>Cutout</shaderType>
@@ -123,11 +124,11 @@
 						<drawOffset>(0.2, 0, -0.06)</drawOffset>
 					</east>
 					<north>
-						<angleOffset>20</angleOffset>
+						<angleOffset>-20</angleOffset>
 						<drawOffset>(0.12, 0, -0.2)</drawOffset>
 					</north>
 					<south>
-						<angleOffset>20</angleOffset>
+						<angleOffset>-20</angleOffset>
 						<drawOffset>(0.12, 0, -0.2)</drawOffset>
 					</south>
 					<west>
