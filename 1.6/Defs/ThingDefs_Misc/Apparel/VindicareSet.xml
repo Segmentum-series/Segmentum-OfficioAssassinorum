@@ -50,14 +50,14 @@
 			<ShootingAccuracyPawn>.2</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<statBases>
-			<WorkToMake>14000</WorkToMake>
+			<WorkToMake>24000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>2.2</Mass>
+			<Mass>1.9</Mass>
 			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
-			<ArmorRating_Blunt>1.35</ArmorRating_Blunt>
+			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.75</ArmorRating_Heat>
-			<Insulation_Cold>14.4</Insulation_Cold>
-			<Insulation_Heat>20</Insulation_Heat>
+			<Insulation_Cold>15.5</Insulation_Cold>
+			<Insulation_Heat>15.5</Insulation_Heat>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.85</DecompressionResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.85</VacuumResistance>
 			
@@ -66,8 +66,9 @@
 		</statBases>
 
 		<costList>
+			<Hyperweave>40</Hyperweave>
 			<Plasteel>25</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
+			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 
 		<apparel>
@@ -131,7 +132,7 @@
 		<statBases>
 			<WorkToMake>45000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>2.2</Mass>
+			<Mass>4.6</Mass>
 			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.85</ArmorRating_Heat>
