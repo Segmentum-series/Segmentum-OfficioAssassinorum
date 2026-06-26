@@ -17,6 +17,7 @@
 		<tab>Seg_SegmentumTab</tab>
 		<prerequisites>
 			<li>AdvancedFabrication</li>
+			<li>Seg_MunitorumEquipment</li>
 		</prerequisites>
 </ResearchProjectDef>
 
