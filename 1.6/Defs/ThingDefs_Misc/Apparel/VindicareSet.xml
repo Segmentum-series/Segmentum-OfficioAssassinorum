@@ -5,7 +5,7 @@
 			<drawSize>1.0</drawSize>
 		</graphicData>
 		<thingCategories>
-			<li>Apparel</li>
+			<li>Seg_OA_AssassinApparel</li>
 		</thingCategories>
 		<tradeTags>
 			<li>Seg_OA_Armour</li>

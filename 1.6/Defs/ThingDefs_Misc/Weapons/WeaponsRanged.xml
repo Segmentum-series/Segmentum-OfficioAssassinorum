@@ -9,6 +9,9 @@
 				<li>Seg_ImperialCraftingTable</li>
 			</recipeUsers>
 		</recipeMaker>
+		<thingCategories>
+			<li>Seg_OA_AssassinWeapons</li>
+		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li>
