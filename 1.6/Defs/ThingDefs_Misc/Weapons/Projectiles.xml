@@ -5,7 +5,7 @@
 	<HediffDef>
 		<defName>Seg_OA_HellfireBurns</defName>
 		<label>Hellfire acid</label>
-		<description>A potent bio-acidic toxin is wreaking havoc on this target.</description>
+		<description>A potent bio-acidic toxin is wreaking havoc on this target's insides.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
@@ -88,7 +88,7 @@
 		<defName>Seg_OA_Bullet_ShieldBreaker</defName>
 		<label>Shield-Breaker round</label>
 		<uiIconPath>UI/Projectile/Seg_OA_UI_ShieldBreaker</uiIconPath>
-		<description>A round designed to explosively overload any void or energy shields it impacts, rendering the shield useless for the near future.</description>
+		<description>A round designed to explosively overload any void or energy shields it makes contact with, rendering the shield useless for the near future and damaging anything nearby.</description>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_OA_ShieldBreaker</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
