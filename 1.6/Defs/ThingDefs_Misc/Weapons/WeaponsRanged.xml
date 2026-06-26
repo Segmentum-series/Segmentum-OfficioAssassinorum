@@ -83,7 +83,7 @@
 				<verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_OA_Bullet_Hellfire</defaultProjectile>
-				<soundCast>Shot_SniperRifle</soundCast> <!--Need sound-->
+				<soundCast>Seg_OA_ExitusShotSup</soundCast> 
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<warmupTime>2.5</warmupTime>
 				<range>58.9</range>
@@ -175,7 +175,7 @@
 				<verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_OA_Bullet_Hellfire</defaultProjectile>
-				<soundCast>ChargeLance_Fire</soundCast> <!--Need sound to represent suppressor-->
+				<soundCast>Seg_OA_ExitusShotLight</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<warmupTime>0.6</warmupTime>
 				<range>20.9</range>

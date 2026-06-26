@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Exitus heavy -->
+	<SoundDef>
+		<defName>Seg_OA_ExitusShotSup</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>99</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Seg_OA_Exitus_shotSup</clipPath>
+					</li>
+				</grains>      
+			<volumeRange>30~60</volumeRange>
+			<pitchRange>0.9~1.1</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+  	<SoundDef>
+		<defName>Seg_OA_ExitusShotLight</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>99</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Seg_OA_Exitus_shot</clipPath>
+					</li>
+				</grains>      
+			<volumeRange>30~60</volumeRange>
+			<pitchRange>1.2~1.4</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>
