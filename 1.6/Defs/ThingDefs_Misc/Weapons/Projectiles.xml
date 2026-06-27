@@ -231,7 +231,7 @@
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AmmoChanger">
 				<effectiveRange>20.9</effectiveRange>
-				<warmupTime>1.2</warmupTime>
+				<warmupTime>1.5</warmupTime>
 				<shotsPerBurst>1</shotsPerBurst>
 			</li>
 		</modExtensions>
@@ -261,7 +261,7 @@
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AmmoChanger">
 				<effectiveRange>20.9</effectiveRange>
-				<warmupTime>1.1</warmupTime>
+				<warmupTime>1.5</warmupTime>
 				<shotsPerBurst>1</shotsPerBurst>
 			</li>
 		</modExtensions>
