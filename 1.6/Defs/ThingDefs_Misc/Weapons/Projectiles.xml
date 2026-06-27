@@ -19,7 +19,7 @@
 			</li>
 		</comps>
 	</HediffDef>
-
+<!-- Hellfire -->
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_OA_Bullet_Hellfire</defName>
 		<label>Hellfire round</label>
@@ -79,7 +79,7 @@
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AmmoChanger">
 				<effectiveRange>31.5</effectiveRange>
-				<warmupTime>3</warmupTime>
+				<warmupTime>3.5</warmupTime>
 				<shotsPerBurst>1</shotsPerBurst>
 			</li>
 		</modExtensions>
@@ -109,7 +109,7 @@
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AmmoChanger">
 				<effectiveRange>55.9</effectiveRange>
-				<warmupTime>1.5</warmupTime>
+				<warmupTime>2.5</warmupTime>
 				<shotsPerBurst>1</shotsPerBurst>
 			</li>
 		</modExtensions>
@@ -170,4 +170,101 @@
 			<li>SmoothedMarble</li>
 		</stopWhenHitAt>
 	</VEF.Weapons.ExpandableProjectileDef>
+	
+	<!-- Hellfire Pistol-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_OA_Bullet_HellfirePistol</defName>
+		<label>Hellfire round</label>
+		<description>A round filled with virulent bio-acidic toxins which can turn a target into melted ash from the inside out.</description>
+		<uiIconPath>UI/Projectile/Seg_OA_UI_Hellfire</uiIconPath>
+		<graphicData>
+			<texPath>Things/Projectile/Seg_OA_Hellfire</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.65</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Seg_OA_HellfireDamage</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<stoppingPower>.5</stoppingPower>
+		<speed>90</speed>
+		</projectile>
+		<recipeMaker>
+			<!--researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite-->
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AmmoChanger">
+				<effectiveRange>55.9</effectiveRange>
+				<warmupTime>1.5</warmupTime>
+				<shotsPerBurst>1</shotsPerBurst>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+<!-- Micromelta Pistol-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_OA_Bullet_MicromeltaPistol</defName>
+		<label>Micromelta round</label>
+		<description>A round tipped with a miniaturised melta charge, able to destroy even the toughest materials and armour.</description>
+		 <thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Seg_OA_Micromelta</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.65</drawSize>
+		</graphicData>
+		<uiIconPath>UI/Projectile/Seg_OA_UI_Micromelta</uiIconPath>
+		<projectile>
+			<damageDef>Seg_OA_Micromelta_Damage</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<explosionRadius>.45</explosionRadius>
+            <speed>60</speed>
+			<explosionEffect>Power_Cell_Burning</explosionEffect>
+		<speed>750</speed>
+		</projectile>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AmmoChanger">
+				<effectiveRange>31.5</effectiveRange>
+				<warmupTime>1.2</warmupTime>
+				<shotsPerBurst>1</shotsPerBurst>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+<!-- Shield breaker -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_OA_Bullet_ShieldBreakerPistol</defName>
+		<label>Shield-Breaker round</label>
+		<uiIconPath>UI/Projectile/Seg_OA_UI_ShieldBreaker</uiIconPath>
+		<description>A round designed to explosively overload any void or energy shields it makes contact with, rendering the shield useless for the near future and damaging anything nearby.</description>
+		<graphicData>
+			<texPath>Things/Projectile/Seg_OA_ShieldBreaker</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.65</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>.5</stoppingPower>
+		<speed>90</speed>
+		</projectile>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<thingClass>seg.Projectile_ShieldBreaker</thingClass>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AmmoChanger">
+				<effectiveRange>55.9</effectiveRange>
+				<warmupTime>1.1</warmupTime>
+				<shotsPerBurst>1</shotsPerBurst>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
 </Defs>

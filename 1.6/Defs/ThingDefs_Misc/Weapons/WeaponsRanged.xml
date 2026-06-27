@@ -174,7 +174,7 @@
 			<li>
 				<verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Seg_OA_Bullet_Hellfire</defaultProjectile>
+				<defaultProjectile>Seg_OA_Bullet_HellfirePistol</defaultProjectile>
 				<soundCast>Seg_OA_ExitusShotLight</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<warmupTime>0.6</warmupTime>
@@ -206,10 +206,10 @@
 			<li Class="Core40k.CompProperties_AmmoChanger">
 			<compClass>Core40k.Comp_AmmoChanger</compClass>
 			<availableProjectiles>
-				<li>Seg_OA_Bullet_Hellfire</li>
+				<li>Seg_OA_Bullet_HellfirePistol</li>
 				<li>Seg_OA_Bullet_TurboPenetrator</li>
-				<li>Seg_OA_Bullet_Micromelta</li>
-				<li>Seg_OA_Bullet_ShieldBreaker</li>
+				<li>Seg_OA_Bullet_MicromeltaPistol</li>
+				<li>Seg_OA_Bullet_ShieldBreakerPistol</li>
 			</availableProjectiles>
 			</li>
 		</comps>
