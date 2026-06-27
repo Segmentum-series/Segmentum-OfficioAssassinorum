@@ -48,7 +48,7 @@
 		</graphicData>
 
 		<equippedStatOffsets>
-			<AimingDelayFactor>.85</AimingDelayFactor> <!-- THIS IS PERCENT NOT SECONDS .85 IS ALREADY GODDAMN INSANE my bad for thinking it was seconds earlier lol-->
+			<AimingDelayFactor>-.85</AimingDelayFactor> <!-- THIS IS PERCENT NOT SECONDS .85 IS ALREADY GODDAMN INSANE my bad for thinking it was seconds earlier lol-->
 			<ShootingAccuracyPawn>.2</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<statBases>
