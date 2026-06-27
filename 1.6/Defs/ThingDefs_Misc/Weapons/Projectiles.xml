@@ -44,7 +44,7 @@
 		</costList>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AmmoChanger">
-				<effectiveRange>55.9</effectiveRange>
+				<effectiveRange>58.9</effectiveRange>
 				<warmupTime>1.5</warmupTime>
 				<shotsPerBurst>1</shotsPerBurst>
 			</li>
@@ -78,7 +78,7 @@
 		</costList>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AmmoChanger">
-				<effectiveRange>31.5</effectiveRange>
+				<effectiveRange>58.9</effectiveRange>
 				<warmupTime>3.5</warmupTime>
 				<shotsPerBurst>1</shotsPerBurst>
 			</li>
@@ -108,7 +108,7 @@
 		<thingClass>seg.Projectile_ShieldBreaker</thingClass>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AmmoChanger">
-				<effectiveRange>55.9</effectiveRange>
+				<effectiveRange>58.9</effectiveRange>
 				<warmupTime>2.5</warmupTime>
 				<shotsPerBurst>1</shotsPerBurst>
 			</li>
@@ -196,7 +196,7 @@
 		</costList>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AmmoChanger">
-				<effectiveRange>55.9</effectiveRange>
+				<effectiveRange>20.9</effectiveRange>
 				<warmupTime>1.5</warmupTime>
 				<shotsPerBurst>1</shotsPerBurst>
 			</li>
@@ -230,7 +230,7 @@
 		</costList>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AmmoChanger">
-				<effectiveRange>31.5</effectiveRange>
+				<effectiveRange>20.9</effectiveRange>
 				<warmupTime>1.2</warmupTime>
 				<shotsPerBurst>1</shotsPerBurst>
 			</li>
@@ -260,7 +260,7 @@
 		<thingClass>seg.Projectile_ShieldBreaker</thingClass>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AmmoChanger">
-				<effectiveRange>55.9</effectiveRange>
+				<effectiveRange>20.9</effectiveRange>
 				<warmupTime>1.1</warmupTime>
 				<shotsPerBurst>1</shotsPerBurst>
 			</li>
