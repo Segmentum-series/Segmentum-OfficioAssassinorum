@@ -12,7 +12,9 @@
 		</tradeTags>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<!--<tags></tags>-->
+			<tags>
+				<li>Seg_OA_VindicareApparel</li>
+			</tags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -73,9 +75,6 @@
 
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<tags>
-			<li>Headgear</li>
-			</tags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>FullHead</li>
