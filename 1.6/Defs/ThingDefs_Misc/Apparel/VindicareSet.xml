@@ -88,6 +88,11 @@
 			<wornGraphicPaths>
 				<li>Things/Apparel/VindicareMask/Seg_OA_VindicareMask</li>
 			</wornGraphicPaths>
+			<renderSkipFlags>
+					<li>Hair</li>
+					<li>Beard</li>
+					<li>Eyes</li>
+			</renderSkipFlags>
 		</apparel>
 		<recipeMaker>
 			<skillRequirements>
