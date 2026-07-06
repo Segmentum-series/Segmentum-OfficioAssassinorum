@@ -68,9 +68,9 @@
 		</statBases>
 
 		<costList>
-			<Hyperweave>40</Hyperweave>
-			<Plasteel>25</Plasteel>
-			<ComponentSpacer>2</ComponentSpacer>
+			<Hyperweave>60</Hyperweave>
+			<Plasteel>35</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 
 		<apparel>
@@ -150,9 +150,9 @@
 			<ShootingAccuracyPawn>.3</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<costList>
-			<Hyperweave>150</Hyperweave>
-			<Seg_Ceramite>15</Seg_Ceramite>
-			<ComponentSpacer>2</ComponentSpacer>
+			<Hyperweave>180</Hyperweave>
+			<Seg_Ceramite>25</Seg_Ceramite>
+			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 
 		<apparel>
