@@ -301,7 +301,7 @@
 		<drawSize>(0.5,0.5)</drawSize>
 
 		<defaultShowRotation>
-			<li>East</li>
+			<li>West</li>
 			<li>North</li>
 			<li>South</li>
 		</defaultShowRotation>
@@ -319,11 +319,11 @@
 			</dataNorth>
 			<dataEast>
 				<layer>30</layer>
+				<flip>true</flip>
 				<offset>(-0.35, 0, -0.35)</offset>
 			</dataEast>
 			<dataWest>
 				<layer>30</layer>
-				<flip>true</flip>
 				<offset>(0.35, 0, -0.35)</offset>
 			</dataWest>
 		</drawData>
