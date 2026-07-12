@@ -1,0 +1,141 @@
+<Defs>
+<!-- BaseDef -->
+	<ThingDef Abstract="True" Name="Seg_OA_AugmeticBase" ParentName="BodyPartBionicBase">
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_OA_AssassinorumAuthorisation</li>
+				<li>Bionics</li>
+			</researchPrerequisites>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+				<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_AugmeticsTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(112, 160, 121)</color>
+		</graphicData>
+		<statBases>
+			<WorkToMake>36000</WorkToMake>
+			<MarketValue>1200</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<techHediffsTags Inherit="False">
+			<li>Seg_OA_AssassinAugmetics</li>
+		</techHediffsTags>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<tradeTags Inherit="False">
+			<li>Seg_OA_AssassinAugmetics</li>
+		</tradeTags>
+	</ThingDef>
+
+<!--boosts breathing capability, reduces aim time, reduces rest needed, reduces recreation need fall rate significantly (but doesn't completely remove it), nearly immune to mental breaks-->
+<!--Vindicare Augmetics-->
+	<!-- ThingDef -->
+	<ThingDef ParentName="BodyPartAdvancedAugmetics">
+		<defName>Seg_OA_VindicareAugmetics</defName>
+		<label>Vindicare neural augmetics</label>
+		<description>Assassins of the Vindicare Temple undergo extensive training and conditioning, but are also bestowed with complex neural augmentation to make them more effective operatives in the field. These augmetics improve their reaction times and suppress but do not eliminate parts of the brain which would interfere with long deployments.</description>
+		<costList Inherit="False">
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites Inherit="False">
+				<li>Seg_OA_AssassinorumAuthorisation</li>
+			</researchPrerequisites>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+				<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_AugmeticsTable</li>
+			</recipeUsers>
+			<skillRequirements Inherit="False">
+				<Crafting>16</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<!-- HediffDef -->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Seg_OA_VindicareAugmetics_Hediff</defName>
+		<label>Vindicare neural augmetics</label>
+		<labelNoun>a set of Vindicare neural augmetics</labelNoun>
+		<description>An installed set of Vindicare neural augmetics. Assassins of the Vindicare Temple undergo extensive training and conditioning, but are also bestowed with complex neural augmentation to make them more effective operatives in the field. These augmetics improve their reaction times and suppress but do not eliminate parts of the brain which would interfere with long deployments.</description>
+		<spawnThingOnRemoved>Seg_OA_VindicareAugmetics</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statFactors>
+					<MentalBreakThreshold>0.2</MentalBreakThreshold>
+					<PainShockThreshold>0.8</PainShockThreshold>
+					<RestRateMultiplier>1.6</RestRateMultiplier>
+					<JoyFallRateFactor>0.3</JoyFallRateFactor>
+					<AimingDelayFactor>0.8</AimingDelayFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<setMax>1.25</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	  <comps>
+			<li Class="seg.HediffCompProperties_ImplantShave" />
+		</comps>
+	</HediffDef>
+
+	<!-- RecipeDef -->
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>InstallSeg_OA_VindicareAugmetics</defName>
+		<label>install Vindicare neural augmetics</label>
+		<description>Install a set of Vindicare neural augmetics. Assassins of the Vindicare Temple undergo extensive training and conditioning, but are also bestowed with complex neural augmentation to make them more effective operatives in the field. These augmetics improve their reaction times and suppress but do not eliminate parts of the brain which would interfere with long deployments.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Seg_OA_VindicareAugmetics</ThingDef>
+			<HediffDef>Seg_OA_VindicareAugmetics_Hediff</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing Vindicare augmetics.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Seg_OA_VindicareAugmetics</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Seg_OA_VindicareAugmetics</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Seg_OA_VindicareAugmetics_Hediff</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>RemoveSeg_OA_VindicareAugmetics</defName>
+		<label>remove Vindicare neural augmetics</label>
+		<description>Remove Vindicare neural augmetics.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Seg_OA_VindicareAugmetics</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing Vindicare neural augmetics.</jobString>
+		<removesHediff>Seg_OA_VindicareAugmetics_Hediff</removesHediff>
+	</RecipeDef>
+
+
+</Defs>

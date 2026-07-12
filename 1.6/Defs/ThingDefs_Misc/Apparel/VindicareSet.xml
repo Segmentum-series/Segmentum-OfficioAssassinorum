@@ -28,7 +28,7 @@
 			<soundWorking>Recipe_Tailor</soundWorking>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 			<recipeUsers Inherit="False">
-				<li>ElectricTailoringBench</li>
+				<li>Seg_ImperialCraftingTable</li>
 			</recipeUsers>
             <researchPrerequisites>
 				<li>Seg_OA_AssassinorumAuthorisation</li>
