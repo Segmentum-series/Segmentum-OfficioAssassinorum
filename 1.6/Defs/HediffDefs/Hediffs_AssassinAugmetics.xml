@@ -85,7 +85,7 @@
 				<capMods>
 					<li>
 						<capacity>Breathing</capacity>
-						<setMax>1.25</setMax>
+						<offset>.25</offset>
 					</li>
 				</capMods>
 			</li>
