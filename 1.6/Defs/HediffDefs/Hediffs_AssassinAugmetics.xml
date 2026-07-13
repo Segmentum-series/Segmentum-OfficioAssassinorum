@@ -44,7 +44,7 @@
 	<ThingDef ParentName="BodyPartAdvancedAugmetics">
 		<defName>Seg_OA_VindicareAugmetics</defName>
 		<label>Vindicare neural augmetics</label>
-		<description>Assassins of the Vindicare Temple undergo extensive training and conditioning, but are also bestowed with complex neural augmentation to make them more effective operatives in the field. These augmetics improve their reaction times and suppress but do not eliminate parts of the brain which would interfere with long deployments.</description>
+		<description>Assassins of the Vindicare Temple undergo extensive training and conditioning, but are also bestowed with complex neural augmentation to make them more effective operatives in the field. These augmetics improve their reaction times, regulate breathing processes, and suppress but do not eliminate parts of the brain which would interfere with long deployments.</description>
 		<costList Inherit="False">
 			<Plasteel>10</Plasteel>
 			<ComponentSpacer>12</ComponentSpacer>
@@ -71,7 +71,7 @@
 		<defName>Seg_OA_VindicareAugmetics_Hediff</defName>
 		<label>Vindicare neural augmetics</label>
 		<labelNoun>a set of Vindicare neural augmetics</labelNoun>
-		<description>An installed set of Vindicare neural augmetics. Assassins of the Vindicare Temple undergo extensive training and conditioning, but are also bestowed with complex neural augmentation to make them more effective operatives in the field. These augmetics improve their reaction times and suppress but do not eliminate parts of the brain which would interfere with long deployments.</description>
+		<description>An installed set of Vindicare neural augmetics. Assassins of the Vindicare Temple undergo extensive training and conditioning, but are also bestowed with complex neural augmentation to make them more effective operatives in the field. These augmetics improve their reaction times, regulate breathing processes, and suppress but do not eliminate parts of the brain which would interfere with long deployments.</description>
 		<spawnThingOnRemoved>Seg_OA_VindicareAugmetics</spawnThingOnRemoved>
 		<stages>
 			<li>
@@ -99,7 +99,7 @@
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
 		<defName>InstallSeg_OA_VindicareAugmetics</defName>
 		<label>install Vindicare neural augmetics</label>
-		<description>Install a set of Vindicare neural augmetics. Assassins of the Vindicare Temple undergo extensive training and conditioning, but are also bestowed with complex neural augmentation to make them more effective operatives in the field. These augmetics improve their reaction times and suppress but do not eliminate parts of the brain which would interfere with long deployments.</description>
+		<description>Install a set of Vindicare neural augmetics. Assassins of the Vindicare Temple undergo extensive training and conditioning, but are also bestowed with complex neural augmentation to make them more effective operatives in the field. These augmetics improve their reaction times, regulate breathing processes, and suppress but do not eliminate parts of the brain which would interfere with long deployments.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Seg_OA_VindicareAugmetics</ThingDef>
 			<HediffDef>Seg_OA_VindicareAugmetics_Hediff</HediffDef>
