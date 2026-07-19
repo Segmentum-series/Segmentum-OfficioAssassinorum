@@ -90,9 +90,6 @@
 				</capMods>
 			</li>
 		</stages>
-	  <comps>
-			<li Class="seg.HediffCompProperties_ImplantShave" />
-		</comps>
 	</HediffDef>
 
 	<!-- RecipeDef -->
