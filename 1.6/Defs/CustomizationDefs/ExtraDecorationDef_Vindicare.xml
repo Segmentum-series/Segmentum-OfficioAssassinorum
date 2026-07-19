@@ -45,6 +45,13 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Misc</decorationType>
+
+		<incompatibleDecorations>
+				<li>Seg_OA_Deco_VindicareSuit_UpperStraps</li>
+				<li>Seg_OA_Deco_VindicareSuit_DarkUpperStraps</li>
+		</incompatibleDecorations>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Upper straps -->
@@ -91,6 +98,13 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Misc</decorationType>
+
+		<incompatibleDecorations>
+				<li>Seg_OA_Deco_VindicareSuit_UpperStrapsWBelt</li>
+				<li>Seg_OA_Deco_VindicareSuit_DarkUpperStraps</li>
+		</incompatibleDecorations>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Dark upper straps -->
@@ -137,6 +151,13 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Misc</decorationType>
+
+		<incompatibleDecorations>
+				<li>Seg_OA_Deco_VindicareSuit_UpperStrapsWBelt</li>
+				<li>Seg_OA_Deco_VindicareSuit_UpperStraps</li>
+		</incompatibleDecorations>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Red belt -->
@@ -187,6 +208,12 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Misc</decorationType>
+
+		<incompatibleDecorations>
+				<li>Seg_OA_Deco_VindicareSuit_DarkBelt</li>
+		</incompatibleDecorations>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Dark belt -->
@@ -237,6 +264,12 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Misc</decorationType>
+
+		<incompatibleDecorations>
+				<li>Seg_OA_Deco_VindicareSuit_RedBelt</li>
+		</incompatibleDecorations>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Holster -->
@@ -288,6 +321,8 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Pouches</decorationType>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Pouches -->
@@ -335,6 +370,8 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Pouches</decorationType>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Shock grenade -->
@@ -382,6 +419,8 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Grenades</decorationType>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Frag grenade -->
@@ -429,6 +468,8 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Grenades</decorationType>
 	</Core40k.ExtraDecorationDef>
 
 </Defs>
