@@ -45,7 +45,7 @@
 	<HediffDef ParentName="BEWH_StatAlteringHediffDef">
 		<defName>Seg_OA_VindicareMaskAbilityBuff</defName>
 		<label>Ballistic cogitator active</label>
-		<description>{PAWN_nameDef} has enabled the spy mask's integrated ballistic cogitator. The machine spirits and sacred algorithms of Mars are guiding every shot fired.</description>
+		<description>The spy mask's integrated ballistic cogitator has been enabled. The machine spirits and sacred algorithms of Mars are guiding every shot fired.</description>
 		<stages>
 			<li>
 				<statFactors>
