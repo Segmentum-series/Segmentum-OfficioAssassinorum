@@ -58,7 +58,7 @@
 				<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_AugmeticsTable</li>
 			</recipeUsers>
 			<skillRequirements Inherit="False">
-				<Crafting>16</Crafting>
+				<Crafting>14</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<statBases>

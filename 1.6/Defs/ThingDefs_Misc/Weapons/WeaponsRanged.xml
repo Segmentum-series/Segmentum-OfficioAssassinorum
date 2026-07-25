@@ -108,7 +108,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>12</Crafting>
+				<Crafting>14</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 
@@ -199,7 +199,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>12</Crafting>
+				<Crafting>14</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<comps>
