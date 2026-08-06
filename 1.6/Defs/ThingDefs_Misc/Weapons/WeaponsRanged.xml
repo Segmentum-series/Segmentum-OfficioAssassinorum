@@ -25,25 +25,6 @@
 				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
 			</li> -->
 		</comps>
-		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>4</cooldownTime>
-			</li>
-		</tools>
 		<relicChance MayRequire="Ludeon.RimWorld.Ideology">1</relicChance>
 		<weaponTags Inherit="False" />
 		<tradeTags Inherit="False" />
@@ -140,6 +121,26 @@
 				</weaponCarryDrawOffsets>
 			</li>
 		</modExtensions>
+		
+		<tools Inherit="False">
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>3.4</cooldownTime>
+			</li>
+		</tools>
 	</ThingDef>
 	
 	<!-- Exitus pistol -->
@@ -226,7 +227,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>10</power>
+				<power>12</power>
 				<cooldownTime>1.6</cooldownTime>
 			</li>
 			<li>
@@ -235,9 +236,9 @@
 					<li>Blunt</li>
 					<li>Poke</li>
 				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
+				<power>12</power>
+				<cooldownTime>1.6</cooldownTime>
 			</li>
 		</tools>
-	</ThingDef>	
+	</ThingDef>
 </Defs>
