@@ -3,8 +3,8 @@
 	<name>Segmentum - Officio Assassinorum</name>
 	<author>REDACTED, Abomination, Anndra, T H E  S U S P E C T, TwoLargeGayMen, Phonicmas, JerryTheCultist, ShunTheWitch</author> <!-- just assuming that Pho Jerry Shun will very likely help or we will use something they helped before with-->
 	<packageId>REDACTED.Segmentum.Assassinorum</packageId>
-	<modVersion>1.1.0</modVersion>
-	<description>"Climb for vantage. Fire and reload. Evade and attack. Shot. Shot. Shot. Execute." - Vindicare Temple hypnomatic training mantra\n\n Bring the deadly Imperial Assassins to bear on your enemies! The Vindicare assassin temple are masters in dealing long ranged death, and at making sure their esoteric methods do not fall into enemy hands.\n\nThis mod includes:\n- Apparels\n- Weapons\n- Abilities\n\nAssassins is part of "Segmentum", a Warhammer 40.000 modding series by REDACTED.</description>
+	<modVersion>1.0.0</modVersion>
+	<description>"Climb for vantage. Fire and reload. Evade and attack. Shot. Shot. Shot. Execute."\n\n Bring the deadly Imperial Assassins to bear on your enemies! The Vindicare assassin temple are masters in dealing long ranged death, and at making sure their esoteric methods do not fall into enemy hands.\n\nThis mod includes:\n- Apparels\n- Weapons\n- Abilities\n\nOfficio Assassinorum is part of "Segmentum", a Warhammer 40.000 modding series by REDACTED.</description>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
