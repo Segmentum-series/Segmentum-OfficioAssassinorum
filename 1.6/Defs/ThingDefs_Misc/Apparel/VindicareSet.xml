@@ -50,6 +50,10 @@
 		<equippedStatOffsets>
 			<AimingDelayFactor>-.35</AimingDelayFactor> <!-- THIS IS PERCENT NOT SECONDS .85 IS ALREADY GODDAMN INSANE my bad for thinking it was seconds earlier lol-->
 			<ShootingAccuracyPawn>.2</ShootingAccuracyPawn>
+			<ToxicResistance>1.00</ToxicResistance>
+			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.85</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.85</VacuumResistance>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>24000</WorkToMake>
@@ -58,13 +62,8 @@
 			<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.75</ArmorRating_Heat>
-			<Insulation_Cold>15.5</Insulation_Cold>
-			<Insulation_Heat>15.5</Insulation_Heat>
-			<DecompressionResistance MayRequire="kentington.saveourship2">0.85</DecompressionResistance>
-			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.85</VacuumResistance>
-			
-			<ToxicResistance>1.00</ToxicResistance>
-			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>25</Insulation_Heat>
 		</statBases>
 
 		<costList>
@@ -140,14 +139,14 @@
 			<ArmorRating_Sharp>1</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.85</ArmorRating_Heat>
-			<Insulation_Cold>7</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
-			<DecompressionResistance MayRequire="kentington.saveourship2">0.15</DecompressionResistance>
-			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.15</VacuumResistance>
+			<Insulation_Cold>50</Insulation_Cold>
+			<Insulation_Heat>35</Insulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
 			<IncomingDamageFactor>-.5</IncomingDamageFactor>
 			<ShootingAccuracyPawn>.3</ShootingAccuracyPawn>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.15</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.15</VacuumResistance>
 		</equippedStatOffsets>
 		<costList>
 			<Hyperweave>180</Hyperweave>
