@@ -1,0 +1,244 @@
+<Defs>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_OA_GunBase" Abstract="True">
+		<label>Seg_OA_GunBase</label>
+		<description>Base definition for that Skitarii rifle thing i cant be assed to spell again.this should never show in game, if it does report to KitchenSink.</description>
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_ImperialCraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories>
+			<li>Seg_OA_AssassinWeapons</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
+				<colorMaskAmount>3</colorMaskAmount>
+				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+			</li> -->
+		</comps>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">1</relicChance>
+		<weaponTags Inherit="False" />
+		<tradeTags Inherit="False" />
+	</ThingDef>
+
+	<!-- Exitus rifle -->
+	<ThingDef ParentName="Seg_OA_GunBase">
+		<defName>Seg_OA_Gun_ExitusRifle</defName>
+		<label>Exitus rifle</label>
+		<description>The Exitus rifle is an extremely advanced sniper rifle, with each gun painstakingly handmade by highly-skilled Mechanicus artisans for the Assassinorum. Reliable beyond compare and millimetre-accurate when used by an assassin of the Vindicare temple, the rifle can fire various heavy-alloy ammunition types depending on the operational necessity. An assassin treats their rifle as if it is an extension of their body, and losing one in the field is grounds for extreme penance if the assassin returns alive.</description>
+
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_OA_ExitusRifle</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1</uiIconScale>
+		<statBases>
+			<Mass>9</Mass>
+			<EquipDelay>1.2</EquipDelay>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.20</AccuracyTouch>
+			<AccuracyShort>0.45</AccuracyShort>
+			<AccuracyMedium>0.78</AccuracyMedium>
+			<AccuracyLong>0.76</AccuracyLong>
+			<WorkToMake>80000</WorkToMake>
+			<MarketValue>2530</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_OA_Bullet_Hellfire</defaultProjectile>
+				<soundCast>Seg_OA_ExitusShotSup</soundCast> 
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<warmupTime>3.5</warmupTime>
+				<range>58.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+
+		<costList>
+			<Steel>70</Steel>
+			<Plasteel>70</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_OA_AssassinorumAuthorisation</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+
+		<comps>
+			<li Class="Core40k.CompProperties_AmmoChanger">
+			<compClass>Core40k.Comp_AmmoChanger</compClass>
+			<availableProjectiles>
+				<li>Seg_OA_Bullet_Hellfire</li>
+				<li>Seg_OA_Bullet_TurboPenetrator</li>
+				<li>Seg_OA_Bullet_Micromelta</li>
+				<li>Seg_OA_Bullet_ShieldBreaker</li>
+			</availableProjectiles>
+			</li>
+		</comps>
+		
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<east>
+						<drawOffset>(0.2, 0, -0.06)</drawOffset>
+					</east>
+					<north>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0.12, 0, -0.2)</drawOffset>
+					</north>
+					<south>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0.12, 0, -0.2)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.2, 0, -0.06)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+		
+		<tools Inherit="False">
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>3.4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<!-- Exitus pistol -->
+	<ThingDef ParentName="Seg_OA_GunBase">
+		<defName>Seg_OA_Gun_ExitusPistol</defName>
+		<label>Exitus pistol</label>
+		<description>The Exitus pistol is an extremely advanced handgun, with each gun painstakingly handmade by highly-skilled Mechanicus artisans for the Assassinorum. Generally considered a backup weapon to its sister weapon the Exitus rifle, this six-round pistol has an integral suppressor and can rapidly fire various heavy-alloy ammunition types depending on the operational necessity. If a Vindicare Assassin is discovered in the execution of their duties, the Exitus pistol can provide crucial close-quarters firepower to ensure the mission succeeds.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_OA_ExitusPistol</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<uiIconScale>1.3</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<EquipDelay>0.6</EquipDelay>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.78</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.15</AccuracyLong>
+			<WorkToMake>60000</WorkToMake>
+			<MarketValue>2050</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_OA_Bullet_HellfirePistol</defaultProjectile>
+				<soundCast>Seg_OA_ExitusShotLight</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<warmupTime>1.5</warmupTime>
+				<range>20.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<muzzleFlashScale>5</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<costList>
+			<Steel>30</Steel>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_OA_AssassinorumAuthorisation</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="Core40k.CompProperties_AmmoChanger">
+			<compClass>Core40k.Comp_AmmoChanger</compClass>
+			<availableProjectiles>
+				<li>Seg_OA_Bullet_HellfirePistol</li>
+				<li>Seg_OA_Bullet_TurboPenetrator</li>
+				<li>Seg_OA_Bullet_MicromeltaPistol</li>
+				<li>Seg_OA_Bullet_ShieldBreakerPistol</li>
+			</availableProjectiles>
+			</li>
+		</comps>
+
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<south>
+						<drawOffset>(0, 0, -0.07)</drawOffset>
+					</south>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+
+		<tools Inherit="False">
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>

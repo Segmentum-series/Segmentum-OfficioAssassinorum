@@ -1,0 +1,209 @@
+<Defs>
+<ThingDef Abstract="true" Name="Seg_OA_ArmorBase" ParentName="ArmorMachineableBase">
+		<thingClass>Apparel</thingClass>
+		<graphicData>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>Seg_OA_AssassinApparel</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Seg_OA_Armour</li>
+		</tradeTags>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_OA_VindicareApparel</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<recipeUsers Inherit="False">
+				<li>Seg_ImperialCraftingTable</li>
+			</recipeUsers>
+            <researchPrerequisites>
+				<li>Seg_OA_AssassinorumAuthorisation</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+    
+	<!-- Vindicare Mask -->
+		<ThingDef ParentName="Seg_OA_ArmorBase">
+		<defName>Seg_OA_Apparel_VindicareMask</defName>
+		<label>Vindicare spy mask</label>
+		<description>This incredibly advanced mask is equipped with all manner of tech which could help a Vindicare assassin on their missions: vacuum protection, a vox-caster, recording lenses, a rebreather, a built-in auspex, ballistics assistance and magnification optics. On top of that, due to the sensitive nature of the Officio Assassinorum's missions, the mask is equipped with automatic incendiary sensors and scramblers to fry its circuitry and destroy the rest of the assassin's equipment should they die in the pursuit of their mark.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/VindicareMask/Seg_OA_VindicareMask</texPath>
+		</graphicData>
+
+		<equippedStatOffsets>
+			<AimingDelayFactor>-.35</AimingDelayFactor> <!-- THIS IS PERCENT NOT SECONDS .85 IS ALREADY GODDAMN INSANE my bad for thinking it was seconds earlier lol-->
+			<ShootingAccuracyPawn>.2</ShootingAccuracyPawn>
+			<ToxicResistance>1.00</ToxicResistance>
+			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.85</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.85</VacuumResistance>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>1.9</Mass>
+			<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>25</Insulation_Heat>
+		</statBases>
+
+		<costList>
+			<Hyperweave>60</Hyperweave>
+			<Plasteel>35</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/VindicareMask/Seg_OA_VindicareMask</li>
+			</wornGraphicPaths>
+			<renderSkipFlags>
+					<li>Hair</li>
+					<li>Beard</li>
+					<li>Eyes</li>
+			</renderSkipFlags>
+		</apparel>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		
+		<comps>
+			<li Class="Core40k.CompProperties_GivesAbility">
+				<ability>Seg_OA_VindicareMaskAbility</ability>
+			</li>
+			<li Class="seg.CompProperties_VanishOnDeath">
+				<fleck>Fleck_HeatWaveDistortion</fleck>
+				<mote>Mote_BerserkBit</mote>
+				<moteCount>1</moteCount>
+				<moteOffsetRange>0.25~0.75</moteOffsetRange>
+				<filth>Filth_Ash</filth>
+				<filthCount>4</filthCount>
+   			 </li>
+		</comps>
+		<!--<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions> -->
+	</ThingDef>
+
+	<!--Vindicare Suit-->
+	<ThingDef ParentName="Seg_OA_ArmorBase">
+		<defName>Seg_OA_Apparel_VindicareSuit</defName>
+		<label>Vindicare stealth suit</label>
+		<description>The Vindicare stealth suit is a combination of advanced armour-fibre weaves, body-sealing synskin and chameleon chemicals to provide camouflage when on contracts from the Temple. The suit includes a ballistic cogitator for extra accuracy and has the capability to tighten bloodflow to staunch bleeding should the assassin be wounded in the execution of their duties.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/VindicareSuit/Seg_OA_VindicareSuit</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>4.6</Mass>
+			<ArmorRating_Sharp>1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.85</ArmorRating_Heat>
+			<Insulation_Cold>50</Insulation_Cold>
+			<Insulation_Heat>35</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<IncomingDamageFactor>-.5</IncomingDamageFactor>
+			<ShootingAccuracyPawn>.3</ShootingAccuracyPawn>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.15</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.15</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<Hyperweave>180</Hyperweave>
+			<Seg_Ceramite>25</Seg_Ceramite>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/VindicareSuit/Seg_OA_VindicareSuit</li>
+			</wornGraphicPaths>
+		</apparel>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Body</decorativeType>
+			</li>
+			<li Class="Core40k.CompProperties_GivesAbility">
+				<ability>Seg_OA_SuitStims</ability>
+			</li>
+			
+    		<li Class="seg.CompProperties_VanishOnDeath">
+				<fleck>Fleck_HeatWaveDistortion</fleck>
+				<mote>Mote_BerserkBit</mote>
+				<moteCount>1</moteCount>
+				<moteOffsetRange>0.25~0.75</moteOffsetRange>
+				<filth>Filth_Ash</filth>
+				<filthCount>4</filthCount>
+   			 </li>
+		</comps>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

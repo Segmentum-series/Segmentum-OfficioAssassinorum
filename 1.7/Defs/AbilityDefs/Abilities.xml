@@ -1,0 +1,125 @@
+<Defs>
+
+	<!-- Ballistic cogitator -->
+	<AbilityDef>
+		<defName>Seg_OA_VindicareMaskAbility</defName>
+		<label>enable ballistic cogitator</label>
+        <description>Let the spy mask's integrated cogitators calculate trajectories, velocities, and even likely exit wounds of every bullet fired by the wearer for a short duration.</description>
+		<iconPath>UI/Abilities/Seg_OA_VindicareMaskAbility</iconPath>
+		<cooldownTicksRange>5000</cooldownTicksRange>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<casterMustBeCapableOfViolence>False</casterMustBeCapableOfViolence>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.2</warmupTime>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<statBases>
+			<Ability_Duration>60</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Seg_OA_VindicareMaskAbilityBuff</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<HediffDef ParentName="BEWH_StatAlteringHediffDef">
+		<defName>Seg_OA_VindicareMaskAbilityBuff</defName>
+		<label>Ballistic cogitator active</label>
+		<description>The spy mask's integrated ballistic cogitator has been enabled. The machine spirits and sacred algorithms of Mars are guiding every shot fired.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<AimingDelayFactor>0.4</AimingDelayFactor>
+					<RangedCooldownFactor>0.4</RangedCooldownFactor>
+				</statFactors>
+				<statOffsets>
+					<ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- Activate suit stims -->
+	<AbilityDef>
+		<defName>Seg_OA_SuitStims</defName>
+        <label>activate emergency medicae</label>
+        <description>The stealth suit activates emergency medical treatment for the wearer, automatically tightening to staunch bleeding wounds and administering chemical stimulants to neutralise pain and boost reactions in extremity.</description>
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<iconPath>UI/Abilities/Seg_OA_VindicareSuitStims</iconPath>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<casterMustBeCapableOfViolence>False</casterMustBeCapableOfViolence>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.2</warmupTime>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<statBases>
+			<Ability_Duration>125</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="Core40k.CompProperties_AbilityHealAndTend">
+                <healAmount>1~4</healAmount>
+			</li>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Seg_OA_SuitStimsBuff</hediffDef>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<HediffDef ParentName="BEWH_StatAlteringHediffDef">
+		<defName>Seg_OA_SuitStimsBuff</defName>
+		<label>medicae stimulants</label>
+		<description>The Vindicare stealth suit has administered emergency medicae stimulants to enable continued function of the assassin. The mission is all. The kill is all.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>3</MoveSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+				<painFactor>0.40</painFactor>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>
